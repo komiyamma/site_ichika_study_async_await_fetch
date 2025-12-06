@@ -36,42 +36,42 @@ JavaScriptという言語が持つ「一度に一つのことしかできない�
 
 ### 【Part 1】 基礎編：ワンオペシェフの仕事術
 
-  * **[Day 1：JavaScriptは「ワンオペ」の達人](https://www.google.com/search?q=A01.md)**
+  * **[Day 1：JavaScriptは「ワンオペ」の達人](D01.md)**
       * シェフは一人だけ！「ブロッキング（フリーズ）」の恐怖と、それを回避する考え方。
-  * **[Day 2：キッチンタイマーで遊ぼう ～setTimeout & setInterval～](https://www.google.com/search?q=A02.md)**
+  * **[Day 2：キッチンタイマーで遊ぼう ～setTimeout & setInterval～](D02.md)**
       * 時間を操る基本道具。3秒後に実行したり、1秒ごとに時計を動かしたりする実験。
-  * **[Day 3：イベントループという「魔法の整理術」](https://www.google.com/search?q=A03.md)**
+  * **[Day 3：イベントループという「魔法の整理術」](D03.md)**
       * 「0秒待つ」のミステリー。シェフが止まらずに働き続ける裏側の仕組み（行列とまな板）。
-  * **[Day 4：昔の苦労を知る ～コールバック地獄～](https://www.google.com/search?q=A04.md)**
+  * **[Day 4：昔の苦労を知る ～コールバック地獄～](D04.md)**
       * 順番通りに実行したいだけなのに、コードが「波動拳」になってしまう絶望体験。
 
 ### 【Part 2】 応用編：Promiseと魔法の杖
 
-  * **[Day 5：フクロウ伯爵の「予約チケット（Promise）」](https://www.google.com/search?q=A05.md)**
+  * **[Day 5：フクロウ伯爵の「予約チケット（Promise）」](D05.md)**
       * コードは書かない日。「データ」ではなく「未来の約束（チケット）」を受け取るという概念理解。
-  * **[Day 6：チケットの交換 ～.then()チェーン～](https://www.google.com/search?q=A06.md)**
+  * **[Day 6：チケットの交換 ～.then()チェーン～](D06.md)**
       * チケットを使って処理をつなぐ。「地獄」が一本の線（チェーン）になる快感。
-  * **[Day 7：魔法の「一時停止」ボタン ～async/await～](https://www.google.com/search?q=A07.md)**
+  * **[Day 7：魔法の「一時停止」ボタン ～async/await～](D07.md)**
       * **★最重要回★** 「待て！」と唱えるだけで、非同期処理が普通のコードのように書ける魔法の習得。
-  * **[Day 8：失敗した時の「保険」 ～try...catch 再訪～](https://www.google.com/search?q=A08.md)**
+  * **[Day 8：失敗した時の「保険」 ～try...catch 再訪～](D08.md)**
       * エラー（失敗）が起きてもアプリを落とさない、優しくて強いコードの書き方。
-  * **[Day 9：並行処理のテクニック ～Promise.all～](https://www.google.com/search?q=A09.md)**
+  * **[Day 9：並行処理のテクニック ～Promise.all～](D09.md)**
       * 複数の仕事を「せーの」で同時に片付けて、待ち時間を劇的に短縮する技。
 
 ### 【Part 3】 実践編：世界への扉（fetch）
 
-  * **[Day 10：世界への扉を開く ～GETリクエスト～](https://www.google.com/search?q=A10.md)**
+  * **[Day 10：世界への扉を開く ～GETリクエスト～](D10.md)**
       * `fetch()` を使って、ネットの向こう側（API）からデータを「見る（取得する）」。
-  * **[Day 11：取得したデータを画面に出す ～UIへの反映～](https://www.google.com/search?q=A11.md)**
+  * **[Day 11：取得したデータを画面に出す ～UIへの反映～](D11.md)**
       * 届いたデータを画面に盛り付ける。「読み込み中…」を出してユーザーを安心させるおもてなし。
-  * **[Day 12：こちらの想いを届ける ～POSTリクエスト～](https://www.google.com/search?q=A12.md)**
+  * **[Day 12：こちらの想いを届ける ～POSTリクエスト～](D12.md)**
       * データを「送る（保存する）」。荷札（ヘッダー）と箱詰め（JSON化）の作法。
-  * **[Day 13：トラブル対応とキャンセル ～堅牢な通信～](https://www.google.com/search?q=A13.md)**
+  * **[Day 13：トラブル対応とキャンセル ～堅牢な通信～](D13.md)**
       * 「404 Not Found」や「ユーザーによるキャンセル」に対応する、プロ級の仕上げ。
 
 ### 【Ending】
 
-  * **[Day 14：時の鍵授与（エンドロール）](https://www.google.com/search?q=A14.md)**
+  * **[Day 14：時の鍵授与（エンドロール）](D14.md)**
       * 13日間の旅の振り返りと、次なる冒険へのメッセージ。
 
 -----
@@ -94,4 +94,4 @@ JavaScriptという言語が持つ「一度に一つのことしかできない�
 さあ、心の準備はいいですか？
 **Day 1** の扉を開けて、時間の魔法を身につけに行きましょう！
 
-\<h1\>\<a href="https://www.google.com/search?q=A01.md"\>Day0 からスタート\</a\>\</h1\>
+\<h1\>\<a href="D00.md"\>Day0 からスタート\</a\>\</h1\>
