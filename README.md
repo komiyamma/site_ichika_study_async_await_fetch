@@ -1,4 +1,5 @@
-これまでの「運動記録アプリ（Day 0-15）」の続編となる、新しい**「非同期処理・集中講座」**の概要です。詳細なロードマップや各日の教材は `D00.md` 以降にまとめています。
+
+<img src="./images/Gemini_Generated_Image_xir9dlxir9dlxir9.png" width="300"/> <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
 
 -----
 
