@@ -12,6 +12,8 @@
     </marker>
   </defs>
 
+  <rect width="100%" height="100%" fill="#ffffff" />
+
   <text x="400" y="40" class="label" font-size="20">Web Workerの仕組み（別室のシェフ）</text>
 
   <!-- Left Room: Main Thread -->
