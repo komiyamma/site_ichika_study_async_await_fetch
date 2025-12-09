@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .box { fill: #f0f4f8; stroke: #334155; stroke-width: 2; rx: 10; ry: 10; }
+      .title { font-size: 18px; font-weight: bold; fill: #1e293b; font-family: sans-serif; }
+      .desc { font-size: 14px; fill: #475569; font-family: sans-serif; }
+      .arrow { stroke: #64748b; stroke-width: 2; marker-end: url(#arrowhead); }
+      .stage-title { font-size: 24px; font-weight: bold; fill: #0f172a; text-anchor: middle; font-family: sans-serif; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <text x="400" y="40" class="stage-title">非同期処理・集中講座 ロードマップ</text>
+
+  <!-- Part 1 -->
+  <rect x="50" y="80" width="300" height="150" class="box" fill="#e0f2fe" style="stroke: #0284c7;" />
+  <text x="200" y="110" text-anchor="middle" class="title" fill="#0369a1">Part 1: 時間の感覚</text>
+  <text x="70" y="140" class="desc">Day 1: シングルスレッドの理解</text>
+  <text x="70" y="160" class="desc">Day 2: setTimeout / setInterval</text>
+  <text x="70" y="180" class="desc">Day 3: イベントループ</text>
+  <text x="70" y="200" class="desc">Day 4: コールバック地獄</text>
+
+  <!-- Part 2 -->
+  <rect x="450" y="80" width="300" height="150" class="box" fill="#f0fdf4" style="stroke: #16a34a;" />
+  <text x="600" y="110" text-anchor="middle" class="title" fill="#15803d">Part 2: Promise & async/await</text>
+  <text x="470" y="140" class="desc">Day 5: Promiseの基礎</text>
+  <text x="470" y="160" class="desc">Day 6: .then()チェーン</text>
+  <text x="470" y="180" class="desc">Day 7: async/await (最重要)</text>
+  <text x="470" y="200" class="desc">Day 8: エラー処理, Day 9: 並列処理</text>
+
+  <!-- Arrow 1-2 -->
+  <line x1="350" y1="155" x2="450" y2="155" class="arrow" />
+
+  <!-- Part 3 -->
+  <rect x="50" y="280" width="300" height="150" class="box" fill="#fffbeb" style="stroke: #d97706;" />
+  <text x="200" y="310" text-anchor="middle" class="title" fill="#b45309">Part 3: Fetch API</text>
+  <text x="70" y="340" class="desc">Day 10: GETリクエスト</text>
+  <text x="70" y="360" class="desc">Day 11: DOM操作と連携</text>
+  <text x="70" y="380" class="desc">Day 12: POSTリクエスト</text>
+  <text x="70" y="400" class="desc">Day 13: キャンセル処理</text>
+
+  <!-- Arrow 2-3 (Curve) -->
+  <path d="M 600 230 Q 600 255 400 255 Q 200 255 200 280" fill="none" class="arrow" />
+
+  <!-- Part 4 -->
+  <rect x="450" y="280" width="300" height="150" class="box" fill="#f3f4f6" style="stroke: #4b5563;" />
+  <text x="600" y="310" text-anchor="middle" class="title" fill="#374151">Part 4: Web Worker</text>
+  <text x="470" y="340" class="desc">Day 14: Workerの基本</text>
+  <text x="470" y="360" class="desc">Day 15: 重い計算の並列化</text>
+  <text x="470" y="380" class="desc">(番外編)</text>
+
+  <!-- Arrow 3-4 -->
+  <line x1="350" y1="355" x2="450" y2="355" class="arrow" />
+
+</svg>

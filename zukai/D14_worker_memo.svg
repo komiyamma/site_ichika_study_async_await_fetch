@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <style>
+      .room { fill: #f8fafc; stroke: #334155; stroke-width: 4; }
+      .label { font-family: sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .desc { font-family: sans-serif; font-size: 12px; text-anchor: middle; fill: #666; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .memo { fill: #fef9c3; stroke: #ca8a04; stroke-width: 1; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <text x="400" y="40" class="label" font-size="20">Web Workerの仕組み（別室のシェフ）</text>
+
+  <!-- Left Room: Main Thread -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="300" height="200" class="room" />
+    <text x="150" y="30" class="label" fill="#1e293b">メインスレッド (UI)</text>
+    <text x="150" y="100" font-size="40" text-anchor="middle">🍳</text>
+    <text x="150" y="130" class="desc">接客・画面更新</text>
+    
+    <!-- Code bubble -->
+    <rect x="20" y="150" width="260" height="30" rx="5" fill="#e2e8f0" />
+    <text x="150" y="170" class="desc">UIは止まらない！</text>
+  </g>
+
+  <!-- Right Room: Worker Thread -->
+  <g transform="translate(450, 80)">
+    <rect x="0" y="0" width="300" height="200" class="room" style="stroke-dasharray: 10,5;" />
+    <text x="150" y="30" class="label" fill="#475569">Workerスレッド (裏方)</text>
+    <text x="150" y="100" font-size="40" text-anchor="middle">👨‍💻</text>
+    <text x="150" y="130" class="desc">重い計算専用</text>
+    
+    <!-- Code bubble -->
+    <rect x="20" y="150" width="260" height="30" rx="5" fill="#e2e8f0" />
+    <text x="150" y="170" class="desc">DOMは見えない！</text>
+  </g>
+
+  <!-- Wall -->
+  <rect x="350" y="70" width="100" height="220" fill="#cbd5e1" stroke="none" />
+  <line x1="400" y1="70" x2="400" y2="290" stroke="#94a3b8" stroke-width="4" stroke-dasharray="2,2" />
+  <text x="400" y="310" class="desc">直接会話不可</text>
+
+  <!-- Message Exchange -->
+  <!-- Memo 1: Request -->
+  <g transform="translate(360, 110)">
+    <path d="M 0 0 L 80 0 L 80 10 L 90 20 L 80 20 L 80 40 L 0 40 Z" class="memo" />
+    <text x="40" y="25" class="desc" font-size="10">postMessage</text>
+    <text x="40" y="10" class="desc" font-size="8">依頼</text>
+  </g>
+  <path d="M 330 130 L 370 130" class="arrow" />
+  <path d="M 430 130 L 470 130" class="arrow" />
+
+  <!-- Memo 2: Response -->
+  <g transform="translate(360, 200)">
+    <path d="M 0 0 L 80 0 L 80 10 L 90 20 L 80 20 L 80 40 L 0 40 Z" class="memo" fill="#dbeafe" stroke="#2563eb" />
+    <text x="40" y="25" class="desc" font-size="10">postMessage</text>
+    <text x="40" y="10" class="desc" font-size="8">報告</text>
+  </g>
+  <path d="M 470 220 L 430 220" class="arrow" />
+  <path d="M 370 220 L 330 220" class="arrow" />
+
+</svg>

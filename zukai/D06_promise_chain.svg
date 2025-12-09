@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <style>
+      .block { fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; rx: 5; ry: 5; }
+      .arrow { stroke: #15803d; stroke-width: 3; marker-end: url(#arrowhead); fill: none; }
+      .text { font-family: sans-serif; font-size: 14px; text-anchor: middle; fill: #1e3a8a; }
+      .label { font-family: sans-serif; font-size: 12px; text-anchor: middle; fill: #15803d; }
+      .title { font-family: sans-serif; font-size: 20px; font-weight: bold; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#15803d" />
+    </marker>
+  </defs>
+
+  <text x="400" y="40" class="title">Promiseチェーン（一本道のバトンリレー）</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="140" height="80" class="block" />
+    <text x="70" y="30" class="text" font-weight="bold">Step 1</text>
+    <text x="70" y="55" class="text">ダウンロード</text>
+  </g>
+
+  <path d="M 190 140 L 250 140" class="arrow" />
+  <text x="220" y="130" class="label">.then()</text>
+
+  <!-- Step 2 -->
+  <g transform="translate(250, 100)">
+    <rect x="0" y="0" width="140" height="80" class="block" style="fill: #dbeafe; stroke: #2563eb;" />
+    <text x="70" y="30" class="text" font-weight="bold" fill="#1e40af">Step 2</text>
+    <text x="70" y="55" class="text" fill="#1e40af">データ加工</text>
+  </g>
+
+  <path d="M 390 140 L 450 140" class="arrow" style="stroke: #2563eb; fill: #2563eb marker-end: url(#arrowhead-blue);" />
+  <text x="420" y="130" class="label" fill="#1e40af">.then()</text>
+
+  <!-- Step 3 -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="140" height="80" class="block" style="fill: #fffbeb; stroke: #d97706;" />
+    <text x="70" y="30" class="text" font-weight="bold" fill="#92400e">Step 3</text>
+    <text x="70" y="55" class="text" fill="#92400e">画面表示</text>
+  </g>
+
+  <path d="M 590 140 L 650 140" class="arrow" style="stroke: #d97706;" />
+  <text x="620" y="130" class="label" fill="#92400e">完了!</text>
+
+  <!-- Finish -->
+  <g transform="translate(650, 110)">
+    <circle cx="30" cy="30" r="30" fill="#fef3c7" stroke="#d97706" />
+    <text x="30" y="35" class="text" font-size="20">🎉</text>
+  </g>
+
+  <!-- Connection Link Image -->
+  <rect x="180" y="135" width="20" height="10" rx="2" fill="#94a3b8" />
+  <rect x="380" y="135" width="20" height="10" rx="2" fill="#94a3b8" />
+  <rect x="580" y="135" width="20" height="10" rx="2" fill="#94a3b8" />
+
+  <text x="400" y="240" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">前の走者がゴールしたら、次の走者がスタートするイメージ</text>
+
+</svg>

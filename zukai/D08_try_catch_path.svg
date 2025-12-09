@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 10; ry: 10; }
+      .path-ok { stroke: #16a34a; stroke-width: 4; fill: none; marker-end: url(#arrow-ok); }
+      .path-ng { stroke: #ef4444; stroke-width: 4; fill: none; marker-end: url(#arrow-ng); }
+      .label { font-family: sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .title { font-family: sans-serif; font-size: 20px; font-weight: bold; text-anchor: middle; }
+    </style>
+    <marker id="arrow-ok" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a" />
+    </marker>
+    <marker id="arrow-ng" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+    </marker>
+  </defs>
+
+  <text x="400" y="40" class="title">try...catch の流れ（エラーの救済）</text>
+
+  <!-- Start -->
+  <circle cx="100" cy="150" r="30" fill="#e2e8f0" stroke="#333" />
+  <text x="100" y="155" class="label" font-size="12">Start</text>
+
+  <!-- Try Room -->
+  <rect x="200" y="50" width="200" height="200" class="box" stroke-dasharray="5,5" />
+  <text x="300" y="80" class="label" fill="#64748b">try { ... }</text>
+
+  <!-- Error Event -->
+  <g transform="translate(300, 150)">
+    <text x="0" y="0" class="label">処理実行</text>
+    <text x="0" y="25" font-family="sans-serif" font-size="24">💥</text>
+  </g>
+
+  <!-- Paths -->
+  <path d="M 130 150 L 250 150" class="path-ok" style="stroke: #333; marker-end: url(#arrow-black);" />
+  
+  <!-- Success Path -->
+  <path d="M 330 140 Q 400 140 450 100" class="path-ok" />
+  <text x="420" y="110" class="label" fill="#15803d" font-size="12">成功時</text>
+
+  <!-- Error Path (Warp) -->
+  <path d="M 320 170 Q 350 220 450 250" class="path-ng" />
+  <text x="380" y="240" class="label" fill="#b91c1c" font-size="12">失敗(Error)!</text>
+
+  <!-- Catch Room -->
+  <rect x="450" y="200" width="150" height="100" class="box" fill="#fee2e2" stroke="#ef4444" />
+  <text x="525" y="230" class="label" fill="#b91c1c">catch (e)</text>
+  <text x="525" y="255" font-family="sans-serif" font-size="12" text-anchor="middle">救済処理</text>
+  <text x="525" y="275" font-family="sans-serif" font-size="12" text-anchor="middle">アラート等</text>
+
+  <!-- Finally Room -->
+  <rect x="650" y="100" width="120" height="150" class="box" fill="#f0f9ff" stroke="#0ea5e9" />
+  <text x="710" y="130" class="label" fill="#0369a1">finally</text>
+  <text x="710" y="160" font-family="sans-serif" font-size="12" text-anchor="middle">後片付け</text>
+  
+  <!-- Connect to Finally -->
+  <!-- From Success -->
+  <path d="M 500 100 L 650 120" class="path-ok" stroke-width="2" />
+  
+  <!-- From Catch -->
+  <path d="M 600 250 Q 625 250 650 220" class="path-ng" stroke-width="2" />
+
+</svg>

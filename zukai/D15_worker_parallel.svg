@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <style>
+      .timeline { stroke: #333; stroke-width: 2; }
+      .block-main { fill: #f0fdf4; stroke: #16a34a; }
+      .block-work { fill: #fef2f2; stroke: #ef4444; }
+      .label { font-family: sans-serif; font-size: 14px; font-weight: bold; }
+      .msg-arrow { stroke: #3b82f6; stroke-width: 2; stroke-dasharray: 4,4; marker-end: url(#arrow-blue); }
+    </style>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+    </marker>
+  </defs>
+
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" font-family="sans-serif">並列処理のタイムライン (UI + Worker)</text>
+
+  <!-- Main Thread -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="-10" class="label" fill="#166534">メインスレッド (UI)</text>
+    <line x1="0" y1="20" x2="700" y2="20" class="timeline" />
+    
+    <!-- UI Activities (Sparse) -->
+    <rect x="50" y="10" width="60" height="20" class="block-main" />
+    <text x="80" y="25" text-anchor="middle" font-size="10" fill="#166534">クリック</text>
+    
+    <rect x="250" y="10" width="80" height="20" class="block-main" />
+    <text x="290" y="25" text-anchor="middle" font-size="10" fill="#166534">進捗表示 20%</text>
+
+    <rect x="450" y="10" width="80" height="20" class="block-main" style="fill:#dbeafe; stroke:#2563eb;" />
+    <text x="490" y="25" text-anchor="middle" font-size="10" fill="#1e40af">キャンセル可能!</text>
+
+    <rect x="600" y="10" width="80" height="20" class="block-main" />
+    <text x="640" y="25" text-anchor="middle" font-size="10" fill="#166534">完了表示</text>
+  </g>
+
+  <!-- Worker Thread -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="-10" class="label" fill="#b91c1c">Workerスレッド (計算)</text>
+    <line x1="0" y1="20" x2="700" y2="20" class="timeline" />
+
+    <!-- Heavy Work (Continuous) -->
+    <rect x="100" y="10" width="500" height="20" class="block-work" />
+    <text x="350" y="25" text-anchor="middle" font-size="12" fill="#b91c1c">超・重い計算 (ループ中...)</text>
+  </g>
+
+  <!-- Messages -->
+  <path d="M 270 180 L 290 120" class="msg-arrow" />
+  <text x="260" y="150" font-size="10" fill="#3b82f6">postMessage(20%)</text>
+  
+  <path d="M 640 180 L 650 120" class="msg-arrow" />
+  <text x="610" y="150" font-size="10" fill="#3b82f6">postMessage(完了)</text>
+
+  <!-- Gap Visual -->
+  <rect x="300" y="50" width="100" height="150" fill="none" class="" />
+  <text x="490" y="80" font-size="12" fill="#15803d" text-anchor="middle">↑ メインはガラガラ</text>
+  <text x="490" y="95" font-size="12" fill="#15803d" text-anchor="middle">（暇なので反応できる）</text>
+
+</svg>
