@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .title { font-size: 20px; font-weight: bold; font-family: sans-serif; text-anchor: middle; }
+      .label { font-size: 14px; font-family: sans-serif; text-anchor: middle; }
+      .box-js { fill: #fef2f2; stroke: #ef4444; stroke-width: 2; rx: 5; }
+      .box-cpp { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2; rx: 5; }
+      .box-queue { fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; rx: 5; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .timeline { stroke: #94a3b8; stroke-width: 4; }
+      .note { font-size: 12px; fill: #64748b; font-family: sans-serif; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="400" y="40" class="title">JavaScriptの非同期処理（ワンオペ＋外注）</text>
+
+  <!-- JS Main Thread -->
+  <g transform="translate(50, 100)">
+    <rect x="-20" y="0" width="140" height="300" fill="#fff1f2" rx="10" />
+    <text x="50" y="30" class="label" font-weight="bold" fill="#b91c1c">JS店長</text>
+    <line x1="50" y1="50" x2="50" y2="280" class="timeline" stroke="#ef4444" />
+    
+    <!-- Task 1: Request -->
+    <circle cx="50" cy="80" r="10" fill="#ef4444" />
+    <text x="80" y="85" class="label" text-anchor="start">1. 重い処理を依頼</text>
+
+    <!-- Task 2: Next Work -->
+    <rect x="30" y="120" width="40" height="80" fill="#fca5a5" />
+    <text x="100" y="150" class="label" text-anchor="start">レジ打ち・接客</text>
+    <text x="100" y="170" class="note" text-anchor="start">（止まらない！）</text>
+
+    <!-- Task 3: Pickup -->
+    <circle cx="50" cy="250" r="10" fill="#ef4444" />
+    <text x="80" y="255" class="label" text-anchor="start">4. 完了品を回収</text>
+  </g>
+
+  <!-- C++ Engine (Outsource) -->
+  <g transform="translate(400, 100)">
+    <rect x="0" y="0" width="200" height="150" class="box-cpp" />
+    <text x="100" y="30" class="label" font-weight="bold" fill="#0369a1">C++エンジン (裏方)</text>
+    
+    <rect x="50" y="60" width="100" height="60" fill="#bae6fd" />
+    <text x="100" y="95" class="label" fill="#0369a1">2. 重い処理中...</text>
+  </g>
+
+  <!-- Queue -->
+  <g transform="translate(400, 300)">
+    <rect x="0" y="0" width="200" height="80" class="box-queue" />
+    <text x="100" y="30" class="label" font-weight="bold" fill="#15803d">完了リスト (Queue)</text>
+    <text x="100" y="60" class="label" fill="#15803d">3. 「終わりました！」</text>
+  </g>
+
+  <!-- Arrows -->
+  <path d="M 60 80 L 400 100" class="arrow" />
+  <path d="M 500 250 L 500 300" class="arrow" />
+  <path d="M 400 340 L 150 260" class="arrow" stroke-dasharray="5,5" />
+  <text x="250" y="320" class="note">手が空いた時にチェック</text>
+
+</svg>

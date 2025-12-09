@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <defs>
+    <style>
+      .box { fill: #fff; stroke: #333; stroke-width: 2; rx: 5; }
+      .label { font-size: 14px; font-family: sans-serif; text-anchor: middle; }
+      .title { font-size: 18px; font-weight: bold; font-family: sans-serif; text-anchor: middle; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .header-tag { fill: #fef08a; stroke: #ca8a04; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="350" y="30" class="title">POSTリクエストの配送フロー</text>
+
+  <!-- Client Side -->
+  <g transform="translate(50, 50)">
+    <text x="80" y="20" class="label" font-weight="bold">自分(JS)</text>
+    
+    <!-- Step 1: Pack -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="100" height="70" class="box" />
+      <text x="50" y="30" class="label">📦 箱詰め</text>
+      <text x="50" y="55" class="label" font-size="10">(stringify)</text>
+    </g>
+
+    <!-- Step 2: Label -->
+    <g transform="translate(40, 60)">
+      <path d="M 60 10 L 100 10 L 110 30 L 100 50 L 60 50 Z" class="header-tag" />
+       <circle cx="70" cy="30" r="3" fill="#fff" stroke="#ca8a04" />
+       <text x="90" y="35" class="label" font-size="10">荷札</text>
+    </g>
+  </g>
+
+  <!-- POST Arrow -->
+  <path d="M 200 120 Q 350 50 500 120" class="arrow" stroke-width="3" />
+  <text x="350" y="80" class="label" fill="#2563eb">POST配送! (Method)</text>
+  <text x="350" y="100" class="label" font-size="10">"Content-Type: JSON"</text>
+
+  <!-- Server Side -->
+  <g transform="translate(500, 50)">
+    <text x="80" y="20" class="label" font-weight="bold">サーバー</text>
+    
+    <!-- Step 3: Check Label -->
+    <g transform="translate(20, 100)">
+      <rect x="0" y="0" width="120" height="80" class="box" fill="#f3f4f6" />
+      <text x="60" y="30" class="label">荷札確認</text>
+      <text x="60" y="50" class="label" font-size="10">「あ、JSONだ！」</text>
+      <text x="60" y="70" class="label" font-weight="bold">処理実行</text>
+    </g>
+  </g>
+
+  <!-- Reply Arrow -->
+  <path d="M 500 230 Q 350 300 200 230" class="arrow" stroke="#16a34a" stroke-dasharray="5,5" />
+  <text x="350" y="280" class="label" fill="#16a34a">完了通知 (Response)</text>
+  <text x="350" y="300" class="label" font-size="10">"OK! (200)"</text>
+
+  <!-- Client Receipt -->
+  <g transform="translate(50, 200)">
+    <rect x="20" y="0" width="100" height="60" class="box" fill="#dcfce7" stroke="#16a34a" />
+    <text x="70" y="35" class="label">📄 完了！</text>
+  </g>
+
+</svg>

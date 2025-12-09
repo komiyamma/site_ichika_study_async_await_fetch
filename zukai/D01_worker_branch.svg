@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .house { fill: #f0f9ff; stroke: #0284c7; stroke-width: 2; }
+      .hut { fill: #fef9c3; stroke: #ca8a04; stroke-width: 2; }
+      .label { font-size: 16px; font-weight: bold; font-family: sans-serif; text-anchor: middle; }
+      .text { font-size: 14px; font-family: sans-serif; text-anchor: middle; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .bubble { fill: #fff; stroke: #333; rx: 10; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="400" y="40" class="label" font-size="20">Web Workersの仕組み (本店と支店)</text>
+
+  <!-- Main House -->
+  <g transform="translate(50, 100)">
+    <path d="M 0 50 L 100 0 L 200 50 L 200 200 L 0 200 Z" class="house" />
+    <text x="100" y="100" class="label" fill="#0369a1">🏠 本店</text>
+    <text x="100" y="125" class="text">(Main JS)</text>
+    <rect x="50" y="140" width="100" height="40" fill="#e0f2fe" stroke="#0284c7" />
+    <text x="100" y="165" class="text" font-size="10">冷蔵庫(Memory) A</text>
+  </g>
+
+  <!-- Branch Hut -->
+  <g transform="translate(550, 100)">
+    <path d="M 0 50 L 100 0 L 200 50 L 200 200 L 0 200 Z" class="hut" />
+    <text x="100" y="100" class="label" fill="#854d0e">🛖 支店</text>
+    <text x="100" y="125" class="text">(Worker JS)</text>
+    <rect x="50" y="140" width="100" height="40" fill="#fef08a" stroke="#ca8a04" />
+    <text x="100" y="165" class="text" font-size="10">冷蔵庫(Memory) B</text>
+  </g>
+
+  <!-- Communication -->
+  <g transform="translate(300, 150)">
+    <!-- Arrow Right -->
+    <path d="M 0 20 L 150 20" class="arrow" />
+    <text x="100" y="10" class="text" font-size="12">コピーして郵送(依頼)</text>
+
+    <!-- Arrow Left -->
+    <path d="M 200 80 L 50 80" class="arrow" />
+    <text x="100" y="100" class="text" font-size="12">コピーして返送(報告)</text>
+  </g>
+
+  <!-- Notes -->
+  <text x="400" y="320" class="text" fill="#ef4444">冷蔵庫（メモリ）は別々！ 安全だが受け渡しにコストがかかる</text>
+
+</svg>

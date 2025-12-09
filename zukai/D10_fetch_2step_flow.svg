@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+  <defs>
+    <style>
+      .box { fill: #fff; stroke: #333; stroke-width: 2; rx: 5; }
+      .label { font-size: 14px; font-family: sans-serif; text-anchor: middle; }
+      .title { font-size: 18px; font-weight: bold; font-family: sans-serif; text-anchor: middle; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .wait-box { fill: #fefce8; stroke: #ca8a04; stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="300" y="40" class="title">fetchの「2回待つ」理由</text>
+
+  <!-- Step 1: Delivery -->
+  <g transform="translate(50, 80)">
+    <text x="100" y="30" class="label" font-weight="bold">① fetch()</text>
+    <rect x="20" y="50" width="160" height="100" class="wait-box" />
+    
+    <text x="100" y="90" class="label">🚚 配送中...</text>
+    <text x="100" y="110" class="label" font-size="10">(1回目のawait)</text>
+  </g>
+
+  <path d="M 230 130 L 280 130" class="arrow" />
+
+  <!-- Checkpoint 1: Box Arrived -->
+  <g transform="translate(280, 100)">
+    <rect x="0" y="0" width="80" height="60" fill="#dbeafe" stroke="#2563eb" />
+    <text x="40" y="35" class="label" font-size="12">📦 箱到着</text>
+    <text x="40" y="80" class="label" font-size="10">Response</text>
+  </g>
+
+  <!-- Step 2: Opening -->
+  <g transform="translate(380, 80)">
+    <text x="100" y="30" class="label" font-weight="bold">② json()</text>
+    <rect x="20" y="50" width="160" height="100" class="wait-box" />
+    
+    <text x="100" y="90" class="label">✂️ 開封中...</text>
+    <text x="100" y="110" class="label" font-size="10">(2回目のawait)</text>
+  </g>
+  
+  <path d="M 560 130 L 610 130" class="arrow" /> <!-- Wait, viewbox is 600 wide -->
+  <!-- Adjust arrows -->
+  
+  <!-- Result -->
+  <g transform="translate(450, 250)">
+    <rect x="-40" y="0" width="80" height="60" fill="#dcfce7" stroke="#16a34a" />
+    <text x="0" y="35" class="label" font-size="12">📄 中身</text>
+    <text x="0" y="80" class="label" font-size="10">Data (JSON)</text>
+  </g>
+  
+  <!-- Redraw Arrows for layout -->
+  <!-- Arrow 1: Box to Open -->
+  <path d="M 320 160 L 320 200 L 400 200" class="arrow" fill="none" />
+  
+  <!-- Arrow 2: Open to Result -->
+  <path d="M 560 130 L 560 200 L 490 250" class="arrow" stroke="none" /> <!-- manual fix -->
+
+</svg>

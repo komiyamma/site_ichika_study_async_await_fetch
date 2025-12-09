@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 10; ry: 10; }
+      .pending { fill: #fef3c7; stroke: #d97706; }
+      .fulfilled { fill: #dcfce7; stroke: #16a34a; }
+      .rejected { fill: #fee2e2; stroke: #b91c1c; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .label { font-size: 16px; font-weight: bold; font-family: sans-serif; text-anchor: middle; }
+      .desc { font-size: 12px; font-family: sans-serif; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="300" y="40" class="label" font-size="20">Promiseの3つの状態（運命の分かれ道）</text>
+
+  <!-- Start Node -->
+  <circle cx="50" cy="150" r="10" fill="#333" />
+  <text x="50" y="180" class="desc">注文！</text>
+  <path d="M 60 150 L 140 150" class="arrow" />
+
+  <!-- Pending -->
+  <g transform="translate(140, 110)">
+    <rect width="120" height="80" class="state-box pending" />
+    <text x="60" y="35" class="label" fill="#b45309">Pending</text>
+    <text x="60" y="55" class="desc">準備中</text>
+  </g>
+
+  <!-- Arrows Split -->
+  <path d="M 260 150 Q 300 150 340 100" class="arrow" stroke="#16a34a" />
+  <text x="320" y="110" class="desc" fill="#15803d">Resolve</text>
+  
+  <path d="M 260 150 Q 300 150 340 200" class="arrow" stroke="#b91c1c" />
+  <text x="320" y="210" class="desc" fill="#b91c1c">Reject</text>
+
+  <!-- Fulfilled -->
+  <g transform="translate(350, 60)">
+    <rect width="140" height="80" class="state-box fulfilled" />
+    <text x="70" y="35" class="label" fill="#15803d">Fulfilled</text>
+    <text x="70" y="55" class="desc">成功！</text>
+    <text x="70" y="70" class="desc" font-size="10">(コーヒーget)</text>
+  </g>
+
+  <!-- Rejected -->
+  <g transform="translate(350, 160)">
+    <rect width="140" height="80" class="state-box rejected" />
+    <text x="70" y="35" class="label" fill="#b91c1c">Rejected</text>
+    <text x="70" y="55" class="desc">失敗...</text>
+    <text x="70" y="70" class="desc" font-size="10">(エラー理由)</text>
+  </g>
+
+  <!-- End Nodes -->
+  <circle cx="550" cy="100" r="10" fill="#333" stroke="#fff" stroke-width="2" />
+  <path d="M 490 100 L 535 100" class="arrow" />
+
+  <circle cx="550" cy="200" r="10" fill="#333" stroke="#fff" stroke-width="2" />
+  <circle cx="550" cy="200" r="15" fill="none" stroke="#333" />
+  <path d="M 490 200 L 535 200" class="arrow" />
+
+</svg>
