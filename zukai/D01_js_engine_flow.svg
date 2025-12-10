@@ -55,9 +55,9 @@
   </g>
 
   <!-- Arrows -->
-  <path d="M 60 80 L 400 100" class="arrow" />
+  <path d="M 200 240 L 400 100" class="arrow" />
   <path d="M 500 250 L 500 300" class="arrow" />
-  <path d="M 400 340 L 150 260" class="arrow" stroke-dasharray="5,5" />
-  <text x="250" y="320" class="note">手が空いた時にチェック</text>
+  <path d="M 400 340 L 250 315" class="arrow" stroke-dasharray="5,5" />
+  <text x="180" y="320" class="note">手が空いた時にチェック</text>
 
 </svg>
