@@ -1,11 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650">
   <defs>
     <style>
-      .arrow { stroke: #333; stroke-width: 3; marker-end: url(#arrowhead); fill: none; }
-      .signal-line { stroke: #ef4444; stroke-width: 3; stroke-dasharray: 10,5; marker-end: url(#arrowhead-red); fill: none; }
+      .box { fill: #f3f4f6; stroke: #333; stroke-width: 2; rx: 8; ry: 8; }
+      .truck-box { fill: #fef9c3; stroke: #ca8a04; stroke-width: 2; rx: 5; ry: 5; }
+      .stop-box { fill: #fee2e2; stroke: #ef4444; stroke-width: 2; rx: 5; ry: 5; }
+      
       .label { font-family: sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
-      .desc { font-family: sans-serif; font-size: 12px; text-anchor: middle; fill: #666; }
+      .desc { font-family: sans-serif; font-size: 14px; text-anchor: middle; fill: #555; }
+      
+      .arrow { stroke: #333; stroke-width: 3; marker-end: url(#arrowhead); fill: none; }
+      .signal-line { stroke: #ef4444; stroke-width: 4; stroke-dasharray: 8,4; marker-end: url(#arrowhead-red); fill: none; }
     </style>
+    
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
     </marker>
@@ -15,43 +21,61 @@
   </defs>
 
   <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="250" y="40" class="label" font-size="20">AbortController（通信キャンセル）の仕組み</text>
 
-  <text x="400" y="40" class="label" font-size="20">AbortController（通信キャンセル）の仕組み</text>
-
-  <!-- Remote Control -->
-  <g transform="translate(50, 100)">
-    <rect x="0" y="0" width="120" height="180" rx="10" fill="#f3f4f6" stroke="#333" stroke-width="2" />
-    <text x="60" y="30" class="desc">コントローラー</text>
+  <!-- ===============================
+       Step 1: Controller / User Action
+       =============================== -->
+  <g transform="translate(150, 70)">
+    <rect x="0" y="0" width="200" height="120" class="box" />
+    <text x="100" y="30" class="label">① コントローラー</text>
     
-    <!-- Button -->
-    <circle cx="60" cy="80" r="30" fill="#ef4444" stroke="#b91c1c" stroke-width="3" />
-    <text x="60" y="85" class="label" fill="#fff" font-size="12">ABORT</text>
-    <text x="60" y="130" class="desc">.abort()</text>
-    <text x="60" y="160" class="desc">スイッチON!</text>
+    <!-- Red Button -->
+    <circle cx="100" cy="70" r="25" fill="#ef4444" stroke="#b91c1c" stroke-width="3" />
+    <text x="100" y="75" class="label" fill="#fff" font-size="10">ABORT</text>
+    <text x="100" y="110" class="desc" font-size="12">switch.abort() ON!</text>
   </g>
 
-  <!-- Fetch Truck -->
-  <g transform="translate(300, 120)">
-    <rect x="0" y="0" width="200" height="100" rx="5" fill="#fef9c3" stroke="#ca8a04" stroke-width="2" />
-    <text x="100" y="30" class="label" fill="#854d0e">fetch()</text>
-    <text x="100" y="55" class="desc">通信中...</text>
+  <!-- Signal Arrow Down -->
+  <path d="M 250 190 L 250 250" class="signal-line" />
+  <text x="265" y="230" class="label" fill="#ef4444" text-anchor="start" font-size="14">停止信号(Signal)</text>
+
+
+  <!-- ===============================
+       Step 2: Fetch Process
+       =============================== -->
+  <g transform="translate(125, 250)">
+    <!-- Truck representation -->
+    <rect x="0" y="0" width="250" height="100" class="truck-box" />
+    <text x="125" y="30" class="label" fill="#854d0e">② fetch()</text>
+    <text x="125" y="55" class="desc">通信中...</text>
     
-    <!-- Antenna -->
-    <line x1="160" y1="0" x2="160" y2="-30" stroke="#333" stroke-width="2" />
-    <circle cx="160" cy="-35" r="5" fill="#ca8a04" />
-    <text x="190" y="-30" class="desc" text-anchor="start">signal監視</text>
+    <!-- Antenna receiving signal -->
+    <path d="M 125 0 L 125 -20" stroke="#ca8a04" stroke-width="3" />
+    <circle cx="125" cy="-20" r="6" fill="#ca8a04" />
+    <text x="140" y="-15" class="desc" text-anchor="start" font-size="10">signal監視中</text>
   </g>
 
-  <!-- Signal Wave -->
-  <path d="M 180 100 Q 250 50 350 80" class="signal-line" />
-  <text x="260" y="60" class="label" fill="#ef4444" font-size="12">停止信号！</text>
+  <!-- Arrow Down to Error -->
+  <path d="M 250 350 L 250 410" class="arrow" />
 
-  <!-- Stop Action -->
-  <g transform="translate(550, 120)">
-    <polygon points="0,0 40,20 0,40" fill="#ef4444" />
-    <text x="60" y="25" class="label" fill="#b91c1c" text-anchor="start">急ブレーキ！</text>
-    <text x="60" y="50" class="desc" text-anchor="start">AbortError発生</text>
-    <text x="60" y="70" class="desc" text-anchor="start">(catchへ移動)</text>
+
+  <!-- ===============================
+       Step 3: Stop / Catch
+       =============================== -->
+  <g transform="translate(125, 410)">
+    <rect x="0" y="0" width="250" height="100" class="stop-box" />
+    <text x="125" y="30" class="label" fill="#b91c1c">③ 急ブレーキ！(中断)</text>
+    <text x="125" y="60" class="desc">エラー発生: AbortError</text>
+    <text x="125" y="85" class="desc" font-size="12">→ catchブロックへ移動</text>
+  </g>
+
+  <!-- Summary Box -->
+  <g transform="translate(50, 550)">
+    <rect x="0" y="0" width="400" height="70" rx="10" fill="#f8fafc" stroke="#64748b" />
+    <text x="200" y="30" class="label" fill="#334155">Point</text>
+    <text x="200" y="50" class="desc">ユーザーの「待てない！」に反応して</text>
+    <text x="200" y="50" class="desc" dy="15">通信を強制終了できる安全装置。</text>
   </g>
 
 </svg>
