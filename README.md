@@ -11,11 +11,12 @@
 <img src="./images/Gemini_Generated_Image_6tjf8c6tjf8c6tjf.png" width="300">
 <img src="./images/Gemini_Generated_Image_wky98vwky98vwky9.png" width="300">
 
-<img src="./images/Gemini_Generated_Image_xlrmcaxlrmcaxlrm.png" width="300">
+
 
 
 ## イチカママドン
  <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
+ 
  <img src="./images/Gemini_Generated_Image_si1qwcsi1qwcsi1q.png" width="300"/>
  <img src="./images/Gemini_Generated_Image_a92kq1a92kq1a92k.png" width="300"/>
 
