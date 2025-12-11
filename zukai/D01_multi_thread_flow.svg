@@ -1,56 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 550">
   <defs>
     <style>
       .title { font-size: 20px; font-weight: bold; font-family: sans-serif; text-anchor: middle; }
-      .label { font-size: 14px; font-family: sans-serif; text-anchor: middle; }
-      .box { fill: #f1f5f9; stroke: #334155; stroke-width: 2; rx: 5; }
-      .timeline { stroke: #333; stroke-width: 4; }
-      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); fill: none; }
+      .label { font-size: 14px; font-family: sans-serif; text-anchor: middle; fill: #333; }
+      .thread-label { font-size: 16px; font-family: sans-serif; text-anchor: middle; font-weight: bold; }
+      .note { font-size: 12px; font-family: sans-serif; fill: #64748b; }
+      
+      .timeline { stroke: #94a3b8; stroke-width: 4; stroke-linecap: round; }
+      
+      .arrow-line { stroke: #333; stroke-width: 2; fill: none; }
+      .arrow-head { fill: #333; }
+      
+      .box-main { fill: #e2e8f0; stroke: #64748b; stroke-width: 2; }
+      .box-a { fill: #fee2e2; stroke: #ef4444; stroke-width: 2; }
+      .box-b { fill: #e0f2fe; stroke: #3b82f6; stroke-width: 2; }
     </style>
+    
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
     </marker>
   </defs>
 
+  <!-- Background -->
   <rect width="100%" height="100%" fill="#ffffff" />
-  <text x="400" y="40" class="title">マルチスレッド（C++/C#など）の働き方</text>
+  <text x="325" y="40" class="title">マルチスレッド（C++/C#など）の働き方</text>
 
-  <!-- Main Thread -->
-  <g transform="translate(100, 80)">
-    <text x="100" y="30" class="label" font-weight="bold">司令塔 (Main)</text>
-    <line x1="100" y1="50" x2="100" y2="300" class="timeline" stroke="#333" />
-    <rect x="80" y="150" width="40" height="100" fill="#cbd5e1" />
-    <text x="50" y="200" class="label">自分の仕事</text>
+  <!-- ========================
+       Timelines
+       ======================== -->
+  
+  <!-- Main Thread (Left) -->
+  <g transform="translate(100, 0)">
+    <text x="0" y="80" class="thread-label" fill="#333">司令塔 (Main)</text>
+    <line x1="0" y1="100" x2="0" y2="500" class="timeline" />
   </g>
 
-  <!-- Thread A -->
-  <g transform="translate(300, 80)">
-    <text x="100" y="30" class="label" font-weight="bold" fill="#b91c1c">バイトA</text>
-    <line x1="100" y1="50" x2="100" y2="250" class="timeline" stroke="#ef4444" />
-    <rect x="80" y="100" width="40" height="100" fill="#fca5a5" />
-    <text x="210" y="180" class="label" fill="#b91c1c">スープ作り</text>
+  <!-- Thread A (Center) -->
+  <g transform="translate(325, 0)">
+    <text x="0" y="80" class="thread-label" fill="#b91c1c">バイトA (スレッド1)</text>
+    <line x1="0" y1="100" x2="0" y2="420" class="timeline" stroke="#fca5a5" />
   </g>
 
-  <!-- Thread B -->
-  <g transform="translate(500, 80)">
-    <text x="100" y="30" class="label" font-weight="bold" fill="#0369a1">バイトB</text>
-    <line x1="100" y1="50" x2="100" y2="250" class="timeline" stroke="#2563eb" />
-    <rect x="80" y="100" width="40" height="100" fill="#bae6fd" />
-    <text x="210" y="180" class="label" fill="#0369a1">野菜切り</text>
+  <!-- Thread B (Right) -->
+  <g transform="translate(550, 0)">
+    <text x="0" y="80" class="thread-label" fill="#0369a1">バイトB (スレッド2)</text>
+    <line x1="0" y1="100" x2="0" y2="420" class="timeline" stroke="#bae6fd" />
   </g>
 
-  <!-- Fork Arrows -->
-  <path d="M 200 100 L 400 100" class="arrow" />
-  <text x="300" y="90" class="label" font-size="12">指示出し</text>
-  <path d="M 200 100 L 600 100" class="arrow" />
+  <!-- ========================
+       Phase 1: Instruction
+       ======================== -->
+  
+  <!-- Arrow to A -->
+  <path d="M 100 120 L 315 140" class="arrow-line" marker-end="url(#arrowhead)" />
+  <text x="210" y="125" class="label" transform="rotate(5, 210, 125)">指示出し</text>
 
-  <!-- Join Arrows -->
-  <path d="M 400 250 L 200 280" class="arrow" />
-  <path d="M 600 250 L 200 280" class="arrow" />
-  <text x="300" y="300" class="label" font-size="12">完了報告</text>
+  <!-- Arrow to B -->
+  <path d="M 100 120 L 540 140" class="arrow-line" marker-end="url(#arrowhead)" />
+  <text x="400" y="125" class="label" transform="rotate(3, 400, 125)">指示出し</text>
 
-  <!-- Parallel label -->
-  <rect x="350" y="140" width="300" height="40" fill="none" stroke="#64748b" stroke-dasharray="5,5" />
-  <text x="500" y="165" class="label" fill="#64748b">全員同時に動いている！（パラレル）</text>
+
+  <!-- ========================
+       Phase 2: Parallel Work
+       ======================== -->
+  
+  <!-- Annotation for Parallel -->
+  <rect x="50" y="160" width="550" height="150" rx="10" fill="none" stroke="#94a3b8" stroke-dasharray="8,4" />
+  <text x="580" y="155" class="note" text-anchor="end">並列処理 (Parallel)</text>
+
+  <!-- Main Work -->
+  <rect x="70" y="170" width="60" height="120" rx="4" class="box-main" />
+  <text x="100" y="230" class="label" style="font-size:12px;">レジ打ち<br/>(自分の仕事)</text>
+
+  <!-- Thread A Work -->
+  <rect x="295" y="170" width="60" height="120" rx="4" class="box-a" />
+  <text x="325" y="230" class="label" fill="#b91c1c">スープ作り</text>
+
+  <!-- Thread B Work -->
+  <rect x="520" y="170" width="60" height="120" rx="4" class="box-b" />
+  <text x="550" y="230" class="label" fill="#0369a1">野菜切り</text>
+
+
+  <!-- ========================
+       Phase 3: Completion & Join
+       ======================== -->
+
+  <!-- A Reports Back -->
+  <path d="M 325 310 L 110 360" class="arrow-line" marker-end="url(#arrowhead)" />
+  <text x="250" y="330" class="label" fill="#b91c1c">完了報告</text>
+
+  <!-- B Reports Back -->
+  <path d="M 550 310 L 110 400" class="arrow-line" marker-end="url(#arrowhead)" />
+  <text x="450" y="350" class="label" fill="#0369a1">完了報告</text>
+
+  <!-- Main Merge -->
+  <rect x="70" y="380" width="60" height="80" rx="4" class="box-main" fill="#f1f5f9" />
+  <text x="100" y="420" class="label">合流・集計</text>
 
 </svg>
