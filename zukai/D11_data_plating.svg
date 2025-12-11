@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700">
   <defs>
     <style>
-      .box { fill: #fff; stroke: #333; stroke-width: 2; rx: 5; ry: 5; }
+      .box { fill: #fff; stroke: #333; stroke-width: 2; rx: 8; ry: 8; }
       .arrow { stroke: #333; stroke-width: 3; marker-end: url(#arrowhead); fill: none; }
       .label { font-family: sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
       .desc { font-family: sans-serif; font-size: 14px; text-anchor: middle; fill: #555; }
+      .step-num { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #555; text-anchor: start; }
     </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
@@ -13,49 +14,59 @@
 
   <rect width="100%" height="100%" fill="#ffffff" />
 
-  <text x="400" y="40" class="label" font-size="20">データ到着から画面表示まで（盛り付け）</text>
+  <text x="250" y="40" class="label" font-size="22">データ到着から画面表示まで（盛り付け）</text>
 
-  <!-- Step 1: JSON -->
-  <g transform="translate(50, 80)">
-    <rect x="0" y="0" width="160" height="120" class="box" fill="#fffbeb" stroke="#d97706" />
-    <text x="80" y="30" class="label" fill="#b45309">JSONデータ</text>
-    <text x="80" y="60" font-family="monospace" font-size="12" fill="#555">{ message: "..." }</text>
-    <text x="80" y="100" class="desc">素材（食材）</text>
+  <!-- ===============================
+       Step 1: JSON (Top)
+       =============================== -->
+  <g transform="translate(150, 70)">
+    <text x="-90" y="30" class="step-num">Step 1</text>
+    <rect x="0" y="0" width="200" height="100" class="box" fill="#fffbeb" stroke="#d97706" />
+    <text x="100" y="30" class="label" fill="#b45309">JSONデータ</text>
+    <text x="100" y="60" font-family="monospace" font-size="14" fill="#555">{ message: "..." }</text>
+    <text x="100" y="85" class="desc">素材（食材）到着！</text>
   </g>
 
-  <!-- Arrow -->
-  <path d="M 220 140 L 300 140" class="arrow" />
-  <text x="260" y="130" class="label" font-size="12">取り出す</text>
+  <!-- Arrow Down -->
+  <path d="M 220 170 L 220 210" class="arrow" />
+  <text x="270" y="195" class="label" text-anchor="start" font-size="12">取り出す</text>
 
-  <!-- Step 2: JS Logic -->
-  <g transform="translate(300, 80)">
-    <rect x="0" y="0" width="200" height="120" class="box" fill="#f0fdf4" stroke="#16a34a" />
+  <!-- ===============================
+       Step 2: JS Logic (Middle)
+       =============================== -->
+  <g transform="translate(150, 210)">
+    <text x="-90" y="30" class="step-num">Step 2</text>
+    <rect x="0" y="0" width="200" height="100" class="box" fill="#f0fdf4" stroke="#16a34a" />
     <text x="100" y="30" class="label" fill="#15803d">JavaScript</text>
-    <text x="100" y="60" class="desc">img.src = ...</text>
-    <text x="100" y="100" class="desc">盛り付け作業</text>
+    <text x="100" y="55" class="desc" font-family="monospace">img.src = data.message</text>
+    <text x="100" y="85" class="desc">盛り付け作業（代入）</text>
   </g>
 
-  <!-- Arrow -->
-  <path d="M 510 140 L 590 140" class="arrow" />
-  <text x="550" y="130" class="label" font-size="12">反映する</text>
+  <!-- Arrow Down -->
+  <path d="M 220 310 L 220 350" class="arrow" />
+  <text x="285" y="335" class="label" text-anchor="start" font-size="12">反映される！</text>
 
-  <!-- Step 3: DOM/UI -->
-  <g transform="translate(600, 80)">
-    <rect x="0" y="0" width="180" height="200" class="box" fill="#f0f9ff" stroke="#0ea5e9" />
-    <text x="90" y="30" class="label" fill="#0369a1">画面 (DOM)</text>
+  <!-- ===============================
+       Step 3: DOM/UI (Bottom)
+       =============================== -->
+  <g transform="translate(125, 350)">
+    <text x="-70" y="30" class="step-num">Step 3</text>
+    <rect x="0" y="0" width="250" height="180" class="box" fill="#f0f9ff" stroke="#0ea5e9" />
+    <text x="125" y="30" class="label" fill="#0369a1">ブラウザの画面 (DOM)</text>
     
     <!-- Image Placeholder -->
-    <rect x="30" y="60" width="120" height="80" fill="#cbd5e1" />
-    <text x="90" y="105" text-anchor="middle" font-size="24">🐶</text>
+    <rect x="65" y="50" width="120" height="90" fill="#cbd5e1" stroke="#94a3b8" />
+    <text x="125" y="105" text-anchor="middle" font-size="40">🐶</text>
     
-    <text x="90" y="170" class="desc">完成料理</text>
+    <text x="125" y="160" class="desc">完成料理（表示完了）</text>
   </g>
 
-  <!-- Wait Spinner Note -->
-  <g transform="translate(100, 240)">
-    <text x="0" y="20" class="desc" text-anchor="start">💡 ポイント:</text>
-    <text x="0" y="40" class="desc" text-anchor="start">データが届くまでの「待ち時間」に</text>
-    <text x="0" y="60" class="desc" text-anchor="start">「ローディング（⏳）」を出すのがプロの技！</text>
+  <!-- Note -->
+  <g transform="translate(50, 560)">
+    <rect x="0" y="0" width="400" height="100" rx="10" fill="#fafafa" stroke="#ddd" />
+    <text x="200" y="30" class="label" fill="#333">💡 ポイント</text>
+    <text x="200" y="60" class="desc">データが届くまでは</text>
+    <text x="200" y="80" class="desc">「ローディング（⏳）」を出して待たせよう！</text>
   </g>
 
 </svg>
