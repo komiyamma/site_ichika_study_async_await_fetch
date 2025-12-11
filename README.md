@@ -18,11 +18,9 @@
  <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
  <img src="./images/Gemini_Generated_Image_si1qwcsi1qwcsi1q.png" width="300"/>
  <img src="./images/Gemini_Generated_Image_a92kq1a92kq1a92k.png" width="300"/>
- <img src="./images/Gemini_Generated_Image_a92kq1a92kq1a92k.png" width="300"/>
 
  <img src="./images/Gemini_Generated_Image_xivrbnxivrbnxivr.png" width="300"/>
- Gemini_Generated_Image_a92kq1a92kq1a92k
- Gemini_Generated_Image_xlrmcaxlrmcaxlrm
+  <img src="./images/Gemini_Generated_Image_t5bqwjt5bqwjt5bq.png" width="300"/>
 
 体には気をつけるのよ。
 
