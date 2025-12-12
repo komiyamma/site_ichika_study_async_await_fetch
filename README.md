@@ -6,9 +6,6 @@
 
 
 
-<img src="./images/Gemini_Generated_Image_6tjf8c6tjf8c6tjf.png" width="300">
-
- 
 
 ## イチカママドン
  <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
