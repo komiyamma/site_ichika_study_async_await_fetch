@@ -19,9 +19,7 @@
 
 
 
-### `./D12.md`（fetch POST）
-- `fetch(url, { method, headers, body })` の“設定オブジェクト”が長く、1要素でも欠けると動かないため挫折しやすい。
-- `JSON.stringify` の必然性（通信はテキスト）が分かっていないと「なんで文字列に？」が再燃しやすい。
+
 
 ### `./D13.md`（response.ok / throw / AbortController）
 - `fetch` は404でも `catch` に行かない（=ネットワーク自体は成功）という仕様が強烈な罠。
