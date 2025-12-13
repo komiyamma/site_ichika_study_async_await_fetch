@@ -32,11 +32,6 @@
 
 
 
-### fetchの失敗パターン整理
-- Day13で `response.ok` は説明されるが、学習者が実際に詰むのはDay10〜12で起きるため、最低限以下の早期整理があると事故が減る：
-  - **HTTPエラー（404/500）**：通信は成功だが `ok` がfalse（自分で分岐する）。
-  - **ネットワークエラー**：`fetch` 自体が例外（`catch` に入る）。
-  - **JSONとして読めない**：`response.json()` が例外になりうる（APIがHTMLを返す等）。
 
 ### async関数の“戻り値”と未処理エラー
 - `async function` は常にPromiseを返すため、呼び出し側で `await` しない/`catch` しないと、**Unhandled Promise Rejection** が起きうる。
