@@ -20,6 +20,28 @@
   - DOM操作によるテーブル描画
   - データの一覧表示、フィルタリング、削除機能
 
+## ?? 理解した「previous_lesson」教材の中身（要約）
+### 教材ファイル（解説）
+- `./previous_lesson/D00.md`：14日ロードマップ（localStorage→表示→削除→フィルタ→Bootstrap→仕上げ→手動テスト）
+- `./previous_lesson/D01.md` から `./previous_lesson/D15.md`：ストーリー形式で段階的に実装を進める解説（Day12がBootstrap、Day13が仕上げ、Day14が手動テスト）
+- `./previous_lesson/README.md`：教材入口・2つのUI版の説明（どちらも同じ `script.js` を使う）
+
+### アプリ画面（HTML）
+- `./previous_lesson/index.html`：シンプル版（素のHTML + 最小限CSS）
+- `./previous_lesson/index.bootstrap.html`：Bootstrap版（見た目だけBootstrap、ロジックは同じ `script.js`）
+
+### アプリ本体（JavaScript）
+- `./previous_lesson/script.js`：localStorage完結のCRUD + フィルタ + 描画の完成版
+  - 保存キー：`ichikaWorkoutLogEntries`（`WORKOUT_STORAGE_KEY`）
+  - データ形：`WorkoutEntry`（`id`, `date`, `type`, `minutes`, `value`, `note`, `createdAt`）
+  - 起動：`DOMContentLoaded` → `initializePage()`（要素取得→イベント登録→日付初期化→一覧描画）
+  - 追加：フォーム `submit` を `preventDefault()` し、入力から `entry` を作って配列へ追加→`JSON.stringify`で保存→フォームreset→再描画
+  - 表示：`renderEntryTable()`（日付フィルタ `filter-date` があれば一致で絞り込み、`createdAt` 降順で並べて `tbody#list` に `innerHTML` 反映）
+  - 削除：行ボタン `onclick` → `removeEntryById()` → 再描画
+  - デバッグ全削除：確認ダイアログ後、該当キーのみ `localStorage.removeItem`
+  - XSS対策：`escapeHtml()` を通してから `innerHTML` に投入
+- `./previous_lesson/theme-toggle.js`：`data-bs-theme` と `localStorage` による light/dark 切替の部品（`index.bootstrap.html` 側には現状読み込みが無いので、組み込み前提の補助ファイルという位置づけ）
+
 ## ⚠️ 【重要】ファイル構成の注意点
 **ルートディレクトリと `previous_lesson` ディレクトリには、同名のファイル（`D00.md` ～ `D15.md`）が存在しますが、中身は全く別の教材です。**
 
