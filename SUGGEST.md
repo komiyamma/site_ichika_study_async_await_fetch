@@ -11,10 +11,7 @@
 
 
 
-### `./D07.md`（async/await）
-- `await` が使える場所（`async function` の中だけ）が初見だとよく躓く。
-- 「async関数は必ずPromiseを返す」ため、呼び出し側での扱い（`main().catch(...)` 等）が意識しづらい。
-- 「止まっているように見えてUIは止まらない」理由（イベントループとの接続）が腹落ちしにくい。
+
 
 ### `./D08.md`（try/catch/finally）
 - `try/catch` が「例外」だけでなく「Promiseの失敗（reject）」にも効く点を混同しやすい。
