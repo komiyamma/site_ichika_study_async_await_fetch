@@ -33,9 +33,7 @@
 
 
 
-### async関数の“戻り値”と未処理エラー
-- `async function` は常にPromiseを返すため、呼び出し側で `await` しない/`catch` しないと、**Unhandled Promise Rejection** が起きうる。
-  「どこでawaitするか」「イベントハンドラ内のasyncの扱い」など、最低限のルール整理が必要。
+
 
 ### Worker運用の現実的な型
 - `terminate()` は強制終了だが、現実では「キャンセル要求メッセージ→Worker側で中断」が必要な場面が多い。
