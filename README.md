@@ -53,4 +53,10 @@
 
 <img src="./images/Gemini_Generated_Image_w7141sw7141sw714.png" width="300">
 
+
+
+
+<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="300">
+
+
 <h1><a href="D00.md">Day 0 からスタート</a></h1>
