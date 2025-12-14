@@ -53,8 +53,7 @@
 
 <img src="./images/Gemini_Generated_Image_w7141sw7141sw714.png" width="300">
 
-
-
+### そして翌日...
 
 <img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="300">
 
