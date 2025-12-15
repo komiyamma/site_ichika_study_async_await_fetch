@@ -20,7 +20,7 @@
   - DOM操作によるテーブル描画
   - データの一覧表示、フィルタリング、削除機能
 
-## ?? 理解した「previous_lesson」教材の中身（要約）
+## ✨️ 理解した「previous_lesson」教材の中身（要約）
 ### 教材ファイル（解説）
 - `./previous_lesson/D00.md`：14日ロードマップ（localStorage→表示→削除→フィルタ→Bootstrap→仕上げ→手動テスト）
 - `./previous_lesson/D01.md` から `./previous_lesson/D15.md`：ストーリー形式で段階的に実装を進める解説（Day12がBootstrap、Day13が仕上げ、Day14が手動テスト）
