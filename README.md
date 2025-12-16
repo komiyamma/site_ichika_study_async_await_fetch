@@ -1,34 +1,62 @@
-## ポセイ丼の星
-<img src="./images/Gemini_Generated_Image_m7nnm6m7nnm6m7nn.png" width="300">
+## ポセイ丼の星のとある日に...
+<img src="./images/Gemini_Generated_Image_m7nnm6m7nnm6m7nn.png" width="400">
+
+# 前回までのあらすじ
+
+「運動トラッカー」を完成させたイチカドン。  
+その後、`try`、`catch`、`finally`、`throw`...  
+エラー処理という名の盾も手に入れ意気揚々。
+
+<img src="./images/Gemini_Generated_Image_juatv6juatv6juat.png" width="225" />
+
+だが突如、「りんりん」が眼の前に現れたのである。
+
+<img src="./images/ichika_exercise_tracker_character_rinrin.png" width="225"/>
 
 
-<img src="./images/Gemini_Generated_Image_4r0shl4r0shl4r0s.png" width="300">
-<img src="./images/Gemini_Generated_Image_eg8godeg8godeg8g.png" width="300">
+**りんりん**：  
+　「イチカ丼、久しぶり！  
+　　最近調子こいてるって本当？  
+
+　　でも、それはまだ『静止した時間』の中での出来事⏰️」
+
+**イチカ丼**：  
+　「静止した時間...？ どういうこと？」
+
+**りんりん**：  
+　「あなたの知らない『トキの流れ』があるの。  
+　　通信、待機、並列処理... それらを操れなければ、一人前にはなれないの⏰️」
+
+**りんりん**：  
+　「このポセイ丼星を出て、私の母星でしばらく修行するのはどーぉ？  
+　**『時の星（タイムズ・ドレッド・スター）』** があなたを呼んでいるわ⏰️」
+
+---
+
+**ナレーター**：  
+　「そして今、イチカドンは新たな星へと旅立つ。  
+　　そこで彼女を待ち受けるのは、完了を待たずに進む処理の嵐か、  
+　　それとも約束（Promise）された未来か...？」
+
+**ナレーター**：  
+　「イチカドンの新たな15日間が、今、始まる...！」
 
 
 
 
-## イチカママドン
- <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
- 
-
-
-
-
-体には気をつけるのよ。
-
-## イチカドン
+## イチカ丼
 
 <img src="./images/Gemini_Generated_Image_6f42n36f42n36f42.png" width="300">
 
-きっと時の技術を身に着けてくるわ
+　「ママ！ わたし、時の星にしばらく行ってくる！  
+　　と～～～～ッても久しぶりの星外旅行よ！」
 
+## イチカママ丼
+ <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
+ 
 
- <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="150"/>
-
-あるきあるきとともにあらんことを...
-
-### イチカドンはポセイドン星を始めて外に出て、リンリンの母性チクタク星へ
+体には気をつけるのよ。  
+いつも「あるきあるき」するのよ。
 
 -----
 
@@ -49,13 +77,31 @@
 - 教材は `D01.md` から `D16.md` を順番に進めてください。
 - メタファーや用語の整理も `D00.md` でまとめています。迷ったら戻って確認を。
 
+## 必須の知識
+
+- try... catch... finally... throw などの例外処理は学習済みであること
+
 -----
 
-<img src="./images/Gemini_Generated_Image_w7141sw7141sw714.png" width="300">
+### 「時の星（タイムズ・ドレッド・スター）」に到着したイチカ丼
 
-### そして翌日...
+な、なにアレ...
 
-<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="300">
+<img src="./images/Gemini_Generated_Image_xnwtlyxnwtlyxnwt.png" width="200">
 
+<br>
+<br>
+<br>
 
-<h1><a href="D00.md">Day 0 からスタート</a></h1>
+　ウゴゴゴゴゴゴゴゴ...  
+　ウギギギギギギギギ... 
+
+<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="500">  
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1><a href="D00.md">時の星へ...</a></h1>
