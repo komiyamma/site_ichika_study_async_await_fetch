@@ -1,5 +1,5 @@
 ## ポセイ丼の星のとある日に...
-<img src="./images/Gemini_Generated_Image_m7nnm6m7nnm6m7nn.png" width="400">
+<img src="./images/Gemini_Generated_Image_m7nnm6m7nnm6m7nn.png" width="500">
 
 # 前回までのあらすじ
 
@@ -29,7 +29,7 @@
 
 **りんりん**：  
 　「このポセイ丼星を出て、私の母星でしばらく修行するのはどーぉ？  
-　**『時の星（タイムズ・ドレッド・スター）』** があなたを呼んでいるわ⏰️」
+　**『時の星』** があなたを呼んでいるわ⏰️」
 
 ---
 
@@ -51,12 +51,12 @@
 　「ママ！ わたし、時の星にしばらく行ってくる！  
 　　と～～～～ッても久しぶりの星外旅行よ！」
 
-## イチカママ丼
+## ママ丼
  <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
  
 
 体には気をつけるのよ。  
-いつも「あるきあるき」するのよ。
+毎日「あるきあるき」するのよ。
 
 -----
 
@@ -83,9 +83,9 @@
 
 -----
 
-### 「時の星（タイムズ・ドレッド・スター）」に到着したイチカ丼
+## 「<ruby>時の星<rt>タイムズ・ドレッド・スター</rt></ruby>」に到着したイチカ丼
 
-な、なにアレ...
+ナ、ナナ、なにアレ...
 
 <img src="./images/Gemini_Generated_Image_xnwtlyxnwtlyxnwt.png" width="200">
 
@@ -104,4 +104,4 @@
 <br>
 <br>
 
-<h1><a href="D00.md">時の星へ...</a></h1>
+<h1><a href="D00.md">「<ruby>時の星<rt>タイムズ・ドレッド・スター</rt></ruby>」へ入港...</a></h1>
