@@ -8,11 +8,11 @@
 その後、`try`、`catch`、`finally`、`throw`...  
 エラー処理という名の盾も手に入れ意気揚々。
 
-<img src="./images/Gemini_Generated_Image_juatv6juatv6juat.png" width="225" />
+<img src="./images/Gemini_Generated_Image_juatv6juatv6juat.png" width="300" />
 
 だが突如、「りんりん」が眼の前に現れたのである。
 
-<img src="./images/ichika_exercise_tracker_character_rinrin.png" width="225"/>
+<img src="./images/ichika_exercise_tracker_character_rinrin.png" width="300"/>
 
 
 **りんりん**：  
@@ -88,7 +88,7 @@
 
 ナ、ナナ、なにアレ...
 
-<img src="./images/Gemini_Generated_Image_xnwtlyxnwtlyxnwt.png" width="200">
+<img src="./images/Gemini_Generated_Image_xnwtlyxnwtlyxnwt.png" width="250">
 
 <br>
 <br>
@@ -97,7 +97,7 @@
 　ウゴゴゴゴゴゴゴゴ...<br>
 　ウギギギギギギギギ...<br>
 <br>
-<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="500">  
+<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="800">  
 
 <br>
 <br>
