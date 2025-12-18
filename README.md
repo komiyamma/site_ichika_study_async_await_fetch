@@ -1,5 +1,5 @@
 
-## ポセイ丼の星のとある日に...
+## ポセイ丼星の「とある日」...
 <img src="./images/Gemini_Generated_Image_m7nnm6m7nnm6m7nn.png" width="500">
 
 # プロローグ
