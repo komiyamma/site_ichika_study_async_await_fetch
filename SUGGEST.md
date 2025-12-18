@@ -35,20 +35,6 @@ function normalFunction() {
 ```
 - 「だから呼び出し側でも `await` するか `.then()` が必要」という流れを強調する。
 
----
-
-### 3. D08：「try...catch 再訪」だが、初学者にとっては初見かもしれない
-
-**問題点**：
-- D08.md のタイトルは「try...catch 再訪」となっていますが、PREVIOUS.md によれば「try-catch-finally を独立した文法要項として学習した」とあるものの、教材内にその詳細な内容がない。
-- `throw new Error()` の構文がD13で突然登場し、D08では `throw` の説明がない。
-
-**改善案**：
-- D08の冒頭に「try-catch-finallyの復習ボックス」を設け、基本構文を図解付きでおさらいする。
-- あるいは、PREVIOUS.mdに記載されている「try-catch-finally教材」へのリンクを追加する。
-
----
-
 
 ---
 
