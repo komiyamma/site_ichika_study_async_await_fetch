@@ -88,7 +88,7 @@
 
 ナ、ナナ、なにアレ...
 
-<img src="./images/Gemini_Generated_Image_xnwtlyxnwtlyxnwt.png" width="250">
+<img src="./images/Gemini_Generated_Image_xnwtlyxnwtlyxnwt_circle.png" width="250">
 
 <br>
 <br>
