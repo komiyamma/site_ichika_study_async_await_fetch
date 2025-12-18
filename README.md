@@ -49,15 +49,13 @@
 
 <img src="./images/Gemini_Generated_Image_6f42n36f42n36f42.png" width="300">
 
-　「ママ！ わたし、時の星にしばらく行ってくる！  
-　　と～～～～ッても久しぶりの星外旅行よ！」
+### 💬「ママ！ わたしね、『時の星』にしばらく行ってくる！<br>　 　はじめての星の外への旅、もうワクワクが止まらないの！」
 
 ## ママ丼
  <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
  
 
-体には気をつけるのよ。  
-毎日「あるきあるき」するのよ。
+### 💬「体には気をつけるのよ。<br>　 　毎日 『あるきあるき』 するのよ？」
 
 -----
 
@@ -97,7 +95,7 @@
 　グゴゴゴゴゴゴゴゴ...<br>
 　ウギギギギギギギギ...<br>
 <br>
-<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="800">  
+<img src="./images/Gemini_Generated_Image_xv35gexv35gexv35_circle.png" width="800">  
 
 <br>
 <br>
