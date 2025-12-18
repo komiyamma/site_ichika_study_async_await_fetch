@@ -93,11 +93,8 @@
 <br>
 <br>
 
-<div align="center">
-<b>グゴゴゴゴゴゴゴゴ...<br>
-ウギギギギギギギギ...</b>
-</div>
-<br>
+### 　グゴゴゴゴゴゴゴゴ...<br>ウギギギギギギギギ...
+
 <img src="./images/Gemini_Generated_Image_xv35gexv35gexv35_circle.png" width="800">  
 
 <br>
