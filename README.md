@@ -94,7 +94,7 @@
 <br>
 <br>
 <br>
-　ウゴゴゴゴゴゴゴゴ...<br>
+　グゴゴゴゴゴゴゴゴ...<br>
 　ウギギギギギギギギ...<br>
 <br>
 <img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="800">  
@@ -105,4 +105,4 @@
 <br>
 <br>
 
-<h1><a href="D00.md">覚悟を決めて「<ruby>時の星<rt>タイムズ・ドレッド・スター</rt></ruby>」へ入港</a></h1>
+<h1><a href="D00.md">覚悟を決めて 「<ruby>時の星<rt>タイムズ・ドレッド・スター</rt></ruby>」 へ</a></h1>
