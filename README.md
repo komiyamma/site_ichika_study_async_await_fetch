@@ -10,7 +10,7 @@
 
 <img src="./images/Gemini_Generated_Image_juatv6juatv6juat.png" width="300" />
 
-だが突如、「りんりん」が眼の前に現れたのである。
+そんなある日、突如「りんりん」が目の前に現れたのである。
 
 <img src="./images/ichika_exercise_tracker_character_rinrin.png" width="300"/>
 
