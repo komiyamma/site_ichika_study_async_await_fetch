@@ -1,7 +1,8 @@
+
 ## ポセイ丼の星のとある日に...
 <img src="./images/Gemini_Generated_Image_m7nnm6m7nnm6m7nn.png" width="500">
 
-# 前回までのあらすじ
+# プロローグ
 
 「運動トラッカー」を完成させたイチカドン。  
 その後、`try`、`catch`、`finally`、`throw`...  
@@ -92,10 +93,10 @@
 <br>
 <br>
 <br>
-
-　ウゴゴゴゴゴゴゴゴ...  
-　ウギギギギギギギギ... 
-
+<br>
+　ウゴゴゴゴゴゴゴゴ...<br>
+　ウギギギギギギギギ...<br>
+<br>
 <img src="./images/Gemini_Generated_Image_xv35gexv35gexv35.png" width="500">  
 
 <br>
