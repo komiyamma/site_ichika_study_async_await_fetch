@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200">
+  <style>
+    @media (prefers-color-scheme: dark) { .fg { fill: #f8f8f8; } }
+    @media (prefers-color-scheme: light) { .fg { fill: #111; } }
+  </style>
+  <text
+    x="40"
+    y="56"
+    font-family="'MS Gothic', 'Courier New', monospace"
+    font-size="24"
+    font-weight="400"
+    class="fg"
+  >
+    <tspan x="40" dy="0">── 行け。恐れるな。</tspan>
+    <tspan x="40" dy="60"></tspan>
+    <tspan x="40" dy="50">おぬしの指先は、</tspan>
+    <tspan x="40" dy="36">もう「果て」まで届いておる ──</tspan>
+  </text>
+</svg>
