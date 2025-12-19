@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520">
+  <defs>
+    <!-- グラデーション背景 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff5f8"/>
+      <stop offset="100%" style="stop-color:#ffe4ec"/>
+    </linearGradient>
+    <!-- 吹き出し用グラデーション -->
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#fdf2f5"/>
+    </linearGradient>
+    <!-- 音符用グラデーション -->
+    <linearGradient id="noteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff69b4"/>
+      <stop offset="100%" style="stop-color:#ff1493"/>
+    </linearGradient>
+    <!-- サビ部分の背景 -->
+    <linearGradient id="sabiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff0f5"/>
+      <stop offset="50%" style="stop-color:#ffe4f0"/>
+      <stop offset="100%" style="stop-color:#fff0f5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="520" fill="url(#bgGradient)" rx="15"/>
+  
+  <!-- 装飾的な星たち -->
+  <text x="30" y="40" font-size="20" opacity="0.6">✨</text>
+  <text x="550" y="60" font-size="18" opacity="0.5">🎨</text>
+  <text x="570" y="480" font-size="16" opacity="0.4">✨</text>
+  <text x="20" y="500" font-size="14" opacity="0.5">🎨</text>
+  
+  <!-- 吹き出し本体 -->
+  <path d="M50 30 
+           Q50 20 60 20 
+           L540 20 
+           Q550 20 550 30 
+           L550 480 
+           Q550 490 540 490 
+           L100 490 
+           L70 510 
+           L80 490 
+           L60 490 
+           Q50 490 50 480 
+           Z" 
+        fill="url(#bubbleGradient)" 
+        stroke="#ffb6c1" 
+        stroke-width="2"/>
+  
+  <!-- 導入部分 -->
+  <text x="80" y="55" font-family="'MS Gothic', 'Courier New', monospace" font-size="16" fill="#d63384">
+    <tspan>あら、久しぶりね🎨</tspan>
+  </text>
+  <text x="80" y="80" font-family="'MS Gothic', 'Courier New', monospace" font-size="16" fill="#6c757d">
+    <tspan>あなたも「時の星」に来ていたの？</tspan>
+  </text>
+  
+  <text x="80" y="115" font-family="'MS Gothic', 'Courier New', monospace" font-size="16" fill="#6c757d">
+    <tspan>え？ </tspan>
+    <tspan font-weight="bold" fill="#d63384">ＵＩが重い</tspan>
+    <tspan>？</tspan>
+  </text>
+  <text x="80" y="140" font-family="'MS Gothic', 'Courier New', monospace" font-size="16" fill="#6c757d">
+    <tspan>ＵＩはオモくちゃダメよ🎨</tspan>
+  </text>
+  
+  <!-- サビ部分の背景 -->
+  <rect x="70" y="160" width="460" height="290" fill="url(#sabiGradient)" rx="10" opacity="0.7"/>
+  
+  <!-- (サビ) ラベル -->
+  <text x="280" y="185" font-family="'MS Gothic', 'Courier New', monospace" font-size="14" fill="#ff69b4" text-anchor="middle" font-weight="bold">
+    (サビ)
+  </text>
+  
+  <!-- 歌詞部分 -->
+  <g font-family="'MS Gothic', 'Courier New', monospace" font-size="15">
+    <!-- ライン1 -->
+    <text x="90" y="215" fill="#ff69b4">♬</text>
+    <text x="115" y="215" fill="#6c757d">──  </text>
+    <text x="150" y="215" fill="#d63384" font-weight="bold" font-size="18">ＵＩ</text>
+    <text x="180" y="215" fill="#ff69b4">🎨</text>
+    <text x="360" y="215" fill="#ff69b4">♬</text>
+    
+    <!-- ライン2 -->
+    <text x="90" y="250" fill="#ff69b4">♬</text>
+    <text x="115" y="250" fill="#6c757d">それじゃ～ 僕にとって君は何～？</text>
+    <text x="360" y="250" fill="#ff69b4">♬</text>
+    
+    <!-- ライン3 -->
+    <text x="90" y="280" fill="#ff69b4">♬</text>
+    <text x="115" y="280" fill="#6c757d">オモ～くて分からない～</text>
+    <text x="360" y="280" fill="#ff69b4">♬</text>
+    
+    <!-- ライン4 -->
+    <text x="90" y="310" fill="#ff69b4">♬</text>
+    <text x="115" y="310" fill="#6c757d">分かりた～くもない～のさ～🎨</text>
+    <text x="360" y="310" fill="#ff69b4">♬</text>
+    
+    <!-- 空白行 -->
+    
+    <!-- ライン5 -->
+    <text x="90" y="355" fill="#ff69b4">♬</text>
+    <text x="115" y="355" fill="#6c757d">たったひとつ～ たしかなコトとが</text>
+    <text x="360" y="355" fill="#ff69b4">♬</text>
+    
+    <!-- ライン6 -->
+    <text x="90" y="385" fill="#ff69b4">♬</text>
+    <text x="115" y="385" fill="#6c757d">あるとするのならば～🎨</text>
+    <text x="360" y="385" fill="#ff69b4">♬</text>
+    
+    <!-- ライン7（クライマックス） -->
+    <text x="90" y="430" fill="#ff69b4" font-size="18">♬</text>
+    <text x="120" y="430" fill="#d63384" font-weight="bold" font-size="20">"カギはワ～カ～🎨"</text>
+    <text x="360" y="430" fill="#ff69b4" font-size="18">♬</text>
+  </g>
+  
+  <!-- 閉じカッコ -->
+  <text x="480" y="470" font-family="'MS Gothic', 'Courier New', monospace" font-size="24" fill="#6c757d">」</text>
+  
+  <!-- 装飾音符 -->
+  <text x="500" y="200" font-size="24" fill="url(#noteGradient)" opacity="0.3">♪</text>
+  <text x="520" y="350" font-size="20" fill="url(#noteGradient)" opacity="0.3">♫</text>
+</svg>
