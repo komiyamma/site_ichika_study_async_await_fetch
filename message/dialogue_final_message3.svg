@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="100" viewBox="0 0 700 100">
+  <style>
+    @media (prefers-color-scheme: dark) { .fg { fill: #f8f8f8; } }
+    @media (prefers-color-scheme: light) { .fg { fill: #111; } }
+  </style>
+  <text
+    x="64"
+    y="56"
+    font-family="Segoe UI, sans-serif"
+    font-size="28"
+    font-weight="400"
+    class="fg"
+  >
+    <tspan x="40" dy="0">“あるきあるき”と共にあらんことを...</tspan>
+  </text>
+</svg>
