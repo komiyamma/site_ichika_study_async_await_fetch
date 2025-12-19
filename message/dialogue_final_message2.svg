@@ -1,21 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300">
   <style>
     @media (prefers-color-scheme: dark) { .fg { fill: #f8f8f8; } }
     @media (prefers-color-scheme: light) { .fg { fill: #111; } }
   </style>
   <text
-    x="40"
+    x="64"
     y="56"
-    font-family="'MS Gothic', 'Courier New', monospace"
-    font-size="24"
+    font-family="Segoe UI, sans-serif"
+    font-size="28"
     font-weight="400"
     class="fg"
   >
-    <tspan x="40" dy="0">さあ、進め。</tspan>
-    <tspan x="40" dy="40">恐れるな、そして信じよ。</tspan>
-    <tspan x="40" dy="66"></tspan>
-    <tspan x="40" dy="40">おぬしが紡いだその因果（コード）は、</tspan>
-    <tspan x="40" dy="40">すでに新たな未来を──</tspan>
-    <tspan x="60" dy="40">書き換え始めておるのじゃからな。</tspan>
+    <tspan x="40" dy="0">── 恐れるな、そして進むがよい。</tspan>
+    <tspan x="40" dy="80">　　 おぬしが紡いだその因果（コード）は、</tspan>
+    <tspan x="40" dy="44">　　 すでに新たな未来を</tspan>
+    <tspan x="40" dy="44">　　 書き換え始めておるのじゃからな ── </tspan>
   </text>
 </svg>
