@@ -1,4 +1,4 @@
-# JavaScript教材評価レポート (Gemini-3.0 Pro)
+# JavaScript教材評価レポート (Gemini-3.0-Pro)
 
 ## 概要
 本レポートは、ルートフォルダにある `README.md` および `D00.md` ～ `D16.md` の一連の教材（非同期処理・集中講座）を評価したものです。
