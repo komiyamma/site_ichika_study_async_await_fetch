@@ -1,4 +1,4 @@
-# JavaScript教材評価レポート (SCORE_CLAUDE)
+# JavaScript教材評価レポート (Claude-Opus-4.5)
 
 ## 概要
 本レポートは、`README.md` および `D00.md` ～ `D16.md` の一連の教材「JavaScriptの『時間』を操る！非同期処理・集中講座」を、指定された条件に基づいて評価したものです。
