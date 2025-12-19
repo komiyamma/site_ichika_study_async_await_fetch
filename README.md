@@ -57,7 +57,7 @@
  <img src="./images/Gemini_Generated_Image_mbkbczmbkbczmbkb.png" width="300"/>
  
 
-### 💬「体には気をつけるのよ。<br>　 　毎日 『あるきあるき』 するのよ？」
+### 💬「体には気をつけるのよ。<br>　 　毎日 『あるきあるき』 の練習するのよ？」
 
 <br>
 <br>
