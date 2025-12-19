@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520">
   <defs>
     <!-- グラデーション背景 -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -24,24 +24,24 @@
   </defs>
   
   <!-- 背景 -->
-  <rect width="600" height="520" fill="url(#bgGradient)" rx="15"/>
+  <rect width="420" height="520" fill="url(#bgGradient)" rx="15"/>
   
   <!-- 装飾的な星たち -->
   <text x="30" y="40" font-size="20" opacity="0.6">✨</text>
-  <text x="550" y="60" font-size="18" opacity="0.5">🎨</text>
-  <text x="570" y="480" font-size="16" opacity="0.4">✨</text>
+  <text x="380" y="60" font-size="18" opacity="0.5">🎨</text>
+  <text x="390" y="480" font-size="16" opacity="0.4">✨</text>
   <text x="20" y="500" font-size="14" opacity="0.5">🎨</text>
   
   <!-- 吹き出し本体 -->
   <path d="M50 30 
            Q50 20 60 20 
-           L540 20 
-           Q550 20 550 30 
-           L550 480 
-           Q550 490 540 490 
-           L100 490 
-           L70 510 
-           L80 490 
+           L80 20
+           L60 2
+           L100 20
+           L380 20 
+           Q390 20 390 30 
+           L390 480 
+           Q390 490 380 490 
            L60 490 
            Q50 490 50 480 
            Z" 
@@ -67,10 +67,10 @@
   </text>
   
   <!-- サビ部分の背景 -->
-  <rect x="70" y="160" width="460" height="290" fill="url(#sabiGradient)" rx="10" opacity="0.7"/>
+  <rect x="70" y="160" width="320" height="290" fill="url(#sabiGradient)" rx="10" opacity="0.7"/>
   
   <!-- (サビ) ラベル -->
-  <text x="280" y="185" font-family="'MS Gothic', 'Courier New', monospace" font-size="14" fill="#ff69b4" text-anchor="middle" font-weight="bold">
+  <text x="230" y="185" font-family="'MS Gothic', 'Courier New', monospace" font-size="14" fill="#ff69b4" text-anchor="middle" font-weight="bold">
     (サビ)
   </text>
   
@@ -116,10 +116,7 @@
     <text x="360" y="430" fill="#ff69b4" font-size="18">♬</text>
   </g>
   
-  <!-- 閉じカッコ -->
-  <text x="480" y="470" font-family="'MS Gothic', 'Courier New', monospace" font-size="24" fill="#6c757d">」</text>
-  
   <!-- 装飾音符 -->
-  <text x="500" y="200" font-size="24" fill="url(#noteGradient)" opacity="0.3">♪</text>
-  <text x="520" y="350" font-size="20" fill="url(#noteGradient)" opacity="0.3">♫</text>
+  <text x="380" y="200" font-size="24" fill="url(#noteGradient)" opacity="0.3">♪</text>
+  <text x="400" y="350" font-size="20" fill="url(#noteGradient)" opacity="0.3">♫</text>
 </svg>
