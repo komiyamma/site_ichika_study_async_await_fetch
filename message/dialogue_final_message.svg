@@ -1,30 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="650" height="900" viewBox="0 0 650 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="920" viewBox="0 0 480 920">
   <style>
     @media (prefers-color-scheme: dark) { .fg { fill: #f8f8f8; } }
     @media (prefers-color-scheme: light) { .fg { fill: #111; } }
   </style>
   <text
-    x="64"
+    x="40"
     y="56"
-    font-family="Segoe UI, sans-serif"
-    font-size="28"
+    font-family="'MS Gothic', 'Courier New', monospace"
+    font-size="24"
     font-weight="400"
     class="fg"
   >
-    <tspan x="40" dy="0">若き探求者よ、</tspan>
-    <tspan x="40" dy="44">よくぞ伝説の「時の鍵」を掌握した。</tspan>
-    <tspan x="40" dy="66">かつておぬしは、</tspan>
-    <tspan x="40" dy="44">止まった時間を「凍結」と嘆き、</tspan>
-    <tspan x="40" dy="44">見えぬ答えを「恐怖」と呼んだであろう。</tspan>
-    <tspan x="40" dy="66">だが、今の瞳を見ればわかる。</tspan>
-    <tspan x="40" dy="44">おぬしは知ったのじゃ。</tspan>
-    <tspan x="40" dy="66">無限に広がるネットワークの深淵において、</tspan>
-    <tspan x="40" dy="44">「待つ」ことこそが、</tspan>
-    <tspan x="40" dy="44">世界と世界を繋ぐための「祈り」であることを。</tspan>
-    <tspan x="40" dy="66">コードという名の糸を紡ぎ、</tspan>
-    <tspan x="40" dy="44">星の大海へと問いを投げかける時...</tspan>
-    <tspan x="40" dy="44">その静寂の中で、おぬしは決して独りではない。</tspan>
-    <tspan x="40" dy="66">星々の彼方、時空の果てから、</tspan>
-    <tspan x="40" dy="44">必ずや「答え」は巡り来る。</tspan>
+    <tspan x="40" dy="0">若き探求者よ。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">かつて、おぬしは嘆いたであろう。</tspan>
+    <tspan x="60" dy="40">止まった時を──「凍結」と。</tspan>
+    <tspan x="60" dy="40">見えぬ答えを──「恐怖」と。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">だが、今は違う。</tspan>
+    <tspan x="40" dy="40">おぬしの瞳が、すべてを語っておる。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">「時の鍵」を掌握したのじゃ、おぬしは。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">知ったのであろう？</tspan>
+    <tspan x="60" dy="40">待つことは、弱さにあらず。</tspan>
+    <tspan x="60" dy="40">待つことは、繋がりの「祈り」。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">糸を紡げ、コードという名の。</tspan>
+    <tspan x="40" dy="40">問いを放て、星の大海へ。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">その静寂を、恐れるでない。</tspan>
+    <tspan x="60" dy="40">独りではない、おぬしは。</tspan>
+    <tspan x="60" dy="40">決して。</tspan>
+    <tspan x="40" dy="66"></tspan>
+    <tspan x="40" dy="40">時空の果てより、</tspan>
+    <tspan x="60" dy="40">星々の彼方より、</tspan>
+    <tspan x="80" dy="40">必ずや巡り来る──「答え」は。</tspan>
   </text>
 </svg>
