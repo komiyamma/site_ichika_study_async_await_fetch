@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="920" viewBox="0 0 500 920">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="800" viewBox="0 0 500 800">
   <style>
     @media (prefers-color-scheme: dark) { .fg { fill: #f8f8f8; } }
     @media (prefers-color-scheme: light) { .fg { fill: #111; } }
@@ -13,21 +13,20 @@
   >
     <tspan x="40" dy="0">若き探求者よ。</tspan>
     <tspan x="40" dy="80"></tspan>
-    <tspan x="40" dy="66">「孤高」の道を、おぬしは歩んできた。</tspan>
-    <tspan x="40" dy="80"></tspan>
-    <tspan x="40" dy="50">止まれば、世界も止まる。</tspan>
+    <tspan x="40" dy="80">「孤高」の道を、おぬしは歩んできた。</tspan>
+    <tspan x="40" dy="36">止まれば、世界も止まる。</tspan>
     <tspan x="40" dy="36">それが、おぬしの鎖であった。</tspan>
     <tspan x="40" dy="80"></tspan>
-    <tspan x="40" dy="50">だが、おぬしは見つけた。</tspan>
+    <tspan x="40" dy="80">だが、おぬしは見つけた。</tspan>
     <tspan x="60" dy="36">「約束」を。</tspan>
     <tspan x="60" dy="36">「魔法」を。</tspan>
     <tspan x="60" dy="36">「繋がり」を。</tspan>
     <tspan x="60" dy="36">そして ── 「分身」を。</tspan>
     <tspan x="40" dy="80"></tspan>
-    <tspan x="40" dy="50">もはや、一人ではない。</tspan>
+    <tspan x="40" dy="80">もはや、一人ではない。</tspan>
     <tspan x="40" dy="36">並び立ち、共に舞う者がおる。</tspan>
     <tspan x="40" dy="80"></tspan>
-    <tspan x="40" dy="50">忘れるでないぞ。</tspan>
+    <tspan x="40" dy="80">忘れるでないぞ。</tspan>
     <tspan x="60" dy="36">「孤独」を知る者だけが、</tspan>
     <tspan x="60" dy="36">「繋がり」の真価を知る。</tspan>
   </text>
