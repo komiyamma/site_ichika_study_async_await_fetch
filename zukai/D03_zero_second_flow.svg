@@ -62,8 +62,8 @@
 
   <path d="M 580 260 L 440 330" class="arrow" />
   
-  <path d="M 360 330 L 220 260" class="arrow" stroke-dasharray="5,5" />
-  <text x="300" y="300" class="label" font-size="10" fill="#d97706">許可</text>
+  <path d="M 360 330 L 150 330" class="arrow" stroke-dasharray="5,5" />
+  <text x="300" y="320" class="label" font-size="10" fill="#d97706">許可</text>
   
   <!-- Final Step -->
   <rect x="80" y="360" width="140" height="40" class="process" style="fill:#dcfce7; stroke:#16a34a;" />
