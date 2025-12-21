@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Styles -->
+  <style>
+    .text { font-family: "Meiryo", sans-serif; font-size: 16px; }
+    .title { font-family: "Meiryo", sans-serif; font-size: 20px; font-weight: bold; }
+    .bar { height: 40px; rx: 5; ry: 5; }
+    .chef-box { fill: #f0f8ff; stroke: #333; stroke-width: 2; rx: 10; ry: 10; }
+  </style>
+
+  <!-- Backgrounds for context -->
+  <rect x="50" y="50" width="740" height="300" class="chef-box" />
+  <text x="400" y="90" text-anchor="middle" class="title">シェフ（JS） &amp; まな板（メインスレッド）</text>
+  <text x="400" y="115" text-anchor="middle" class="text" fill="#d32f2f">⚠️ ループ処理で占領中...（JavaScript本人が数えている）</text>
+
+  <!-- Chef Action -->
+  <text x="100" y="210" text-anchor="middle" font-size="60">🥵</text>
+  
+  <!-- Serial Tasks -->
+  <!-- 1s Task -->
+  <rect x="150" y="180" width="100" height="40" fill="#4caf50" class="bar" />
+  <text x="200" y="206" text-anchor="middle" fill="white" class="text" font-weight="bold">1秒</text>
+  
+  <!-- 2s Task -->
+  <rect x="250" y="180" width="200" height="40" fill="#2196f3" class="bar" />
+  <text x="350" y="206" text-anchor="middle" fill="white" class="text" font-weight="bold">2秒</text>
+  
+  <!-- 3s Task -->
+  <rect x="450" y="180" width="300" height="40" fill="#ff9800" class="bar" />
+  <text x="600" y="206" text-anchor="middle" fill="white" class="text" font-weight="bold">3秒</text>
+
+  <!-- Arrows to show blocking -->
+  <text x="250" y="170" text-anchor="middle" font-size="24">🔒</text>
+  <text x="450" y="170" text-anchor="middle" font-size="24">🔒</text>
+
+  <!-- Total Time Arrow -->
+  <line x1="150" y1="260" x2="750" y2="260" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="450" y="290" text-anchor="middle" class="title" fill="#d32f2f">合計: 1+2+3 = 6秒かかる！</text>
+  
+  <!-- Blocking indication -->
+  <rect x="190" y="310" width="440" height="30" rx="5" ry="5" fill="#ffebee" stroke="#d32f2f" />
+  <text x="400" y="331" text-anchor="middle" class="title" fill="#c62828" font-size="16">⚠️ 画面がフリーズ（他の注文は一切受けられない）</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Styles -->
+  <style>
+    .text { font-family: "Meiryo", sans-serif; font-size: 16px; }
+    .title { font-family: "Meiryo", sans-serif; font-size: 20px; font-weight: bold; }
+    .bar { height: 40px; rx: 5; ry: 5; }
+    .chef-box { fill: #f0f8ff; stroke: #333; stroke-width: 2; rx: 10; ry: 10; }
+    .engine-box { fill: #fff0f5; stroke: #333; stroke-width: 2; rx: 10; ry: 10; }
+  </style>
+
+  <!-- Backgrounds for context -->
+  <!-- Left Side: JS Chef -->
+  <rect x="50" y="50" width="200" height="300" class="chef-box" />
+  <text x="150" y="90" text-anchor="middle" class="title">シェフ（JS）</text>
+  <text x="150" y="115" text-anchor="middle" class="text" font-size="14">まな板（メインスレッド）</text>
+  
+  <!-- Right Side: Web API -->
+  <rect x="300" y="50" width="450" height="300" class="engine-box" />
+  <text x="525" y="90" text-anchor="middle" class="title">ブラウザ（Web API）</text>
+  <text x="525" y="115" text-anchor="middle" class="text" font-size="14">裏方（C++の世界）</text>
+
+  <!-- Chef Action -->
+  <text x="150" y="200" text-anchor="middle" font-size="60">🤷‍♂️</text>
+  <text x="150" y="240" text-anchor="middle" class="title" fill="#2E7D32">手があいている！</text>
+  <text x="150" y="265" text-anchor="middle" class="text" font-size="12">（他の注文も受けられる）</text>
+
+  <!-- Timers in Background -->
+  <!-- 1s Timer -->
+  <rect x="350" y="150" width="100" height="40" fill="#4caf50" class="bar" />
+  <text x="400" y="176" text-anchor="middle" fill="white" class="text" font-weight="bold">1秒</text>
+  <text x="460" y="176" fill="#333" class="text" font-size="12">終わったら呼んでね</text>
+  
+  <!-- 2s Timer -->
+  <rect x="350" y="210" width="200" height="40" fill="#2196f3" class="bar" />
+  <text x="450" y="236" text-anchor="middle" fill="white" class="text" font-weight="bold">2秒</text>
+  
+  <!-- 3s Timer -->
+  <rect x="350" y="270" width="300" height="40" fill="#ff9800" class="bar" />
+  <text x="500" y="296" text-anchor="middle" fill="white" class="text" font-weight="bold">3秒</text>
+
+  <!-- Total Time Arrow -->
+  <line x1="350" y1="330" x2="650" y2="330" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="500" y="360" text-anchor="middle" class="title" fill="#E65100">合計: 約3秒で完了！</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+</svg>
