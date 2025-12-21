@@ -24,7 +24,7 @@
        Step 1: fetch() / Waiting for Delivery
        =============================== -->
   <g transform="translate(150, 70)">
-    <text x="-60" y="35" class="step_label">① fetch()</text>
+    <text x="-80" y="35" class="step_label">① fetch()</text>
     
     <!-- Wait Box -->
     <rect x="0" y="0" width="200" height="80" class="box-wait" />
@@ -52,7 +52,7 @@
        Step 2: json() / Opening
        =============================== -->
   <g transform="translate(150, 290)">
-    <text x="-60" y="35" class="step_label">② json()</text>
+    <text x="-80" y="35" class="step_label">② json()</text>
     
     <!-- Wait Box -->
     <rect x="0" y="0" width="200" height="80" class="box-wait" />
