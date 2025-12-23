@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <defs>
+    <style>
+      .text-body { font-family: sans-serif; font-size: 16px; fill: #333; line-height: 1.6; }
+      .text-bold { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #E65100; }
+      .title { font-size: 24px; font-weight: bold; fill: #444; }
+      .subtext { font-size: 14px; fill: #666; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .dashed-arrow { stroke: #aaa; stroke-width: 2; fill: none; stroke-dasharray: 5,5; marker-end: url(#arrowhead-gray); }
+      .box-bg { fill: #fff; stroke: #333; stroke-width: 2; rx: 10; ry: 10; }
+      .ticket-bg { fill: #FFF3E0; stroke: #FFB74D; stroke-width: 2; }
+      .response-bg { fill: #E1F5FE; stroke: #039BE5; stroke-width: 2; }
+      .data-bg { fill: #F1F8E9; stroke: #8BC34A; stroke-width: 3; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#aaa" />
+    </marker>
+  </defs>
+
+  <!-- Background for readability if needed, currently transparent -->
+  <rect width="800" height="480" fill="#ffffff" rx="10" ry="10" stroke="#eee" stroke-width="1"/>
+
+  <!-- Text Section -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" class="title">🔍 「チケット交換」の連鎖（リレー）</text>
+    
+    <text x="0" y="40" class="text-body">この「2段階で待つ」という形、どこかで見たことがありませんか？</text>
+    <text x="0" y="70" class="text-body">そう、**「Promiseで引換券をもらう」→「後で実体を取得する」**という動きが繰り返されているのです。</text>
+    
+    <text x="0" y="110" class="text-body">しかも面白いことに、これは全体としても **「大きなチケット交換」** になっています。</text>
+    <text x="0" y="140" class="text-body">1回目の <tspan font-weight="bold" fill="#0277BD">Response（伝票）</tspan> は、それ自体が <tspan font-weight="bold" fill="#558B2F">中身（データ）</tspan> と引き換えるための大きなチケットでもあります。</text>
+  </g>
+
+  <!-- Diagram Section (Shifted down by 180px) -->
+  <g transform="translate(0, 180)">
+    <!-- Step 1 Group -->
+    <g transform="translate(50, 50)">
+      <text x="0" y="-20" class="title" font-size="20">Step 1: fetch()</text>
+      
+      <!-- Ticket 1 -->
+      <path d="M0,0 h140 a10,10 0 0 1 10,10 v30 a10,10 0 0 0 -10,10 a10,10 0 0 0 10,10 v30 a10,10 0 0 1 -10,10 h-140 a10,10 0 0 1 -10,-10 v-30 a10,10 0 0 0 10,-10 a10,10 0 0 0 -10,-10 v-30 a10,10 0 0 1 10,-10 z" class="ticket-bg" />
+      <text x="75" y="45" text-anchor="middle" class="text-body" font-weight="bold">Promise</text>
+      <text x="75" y="65" text-anchor="middle" class="subtext">通信のチケット</text>
+
+      <!-- Arrow 1 -->
+      <line x1="160" y1="50" x2="210" y2="50" class="arrow" />
+      <text x="185" y="40" text-anchor="middle" class="subtext">await</text>
+
+      <!-- Response -->
+      <rect x="220" y="10" width="160" height="80" class="response-bg" rx="5" />
+      <text x="300" y="45" text-anchor="middle" class="text-body" font-weight="bold">Response</text>
+      <text x="300" y="65" text-anchor="middle" class="subtext">不在票・伝票</text>
+    </g>
+
+    <!-- Connection Arrow -->
+    <path d="M350,130 C350,160 400,160 440,160" class="dashed-arrow" fill="none" transform="translate(0, -30)"/>
+    <text x="400" y="115" text-anchor="middle" class="subtext" fill="#888">これも実は「中身への引換券」！</text>
+
+    <!-- Step 2 Group -->
+    <g transform="translate(450, 150)">
+      <text x="0" y="-20" class="title" font-size="20">Step 2: response.json()</text>
+
+      <!-- Ticket 2 -->
+      <path d="M0,0 h140 a10,10 0 0 1 10,10 v30 a10,10 0 0 0 -10,10 a10,10 0 0 0 10,10 v30 a10,10 0 0 1 -10,10 h-140 a10,10 0 0 1 -10,-10 v-30 a10,10 0 0 0 10,-10 a10,10 0 0 0 -10,-10 v-30 a10,10 0 0 1 10,-10 z" class="ticket-bg" />
+      <text x="75" y="45" text-anchor="middle" class="text-body" font-weight="bold">Promise</text>
+      <text x="75" y="65" text-anchor="middle" class="subtext">変換のチケット</text>
+
+      <!-- Arrow 2 -->
+      <line x1="160" y1="50" x2="210" y2="50" class="arrow" />
+      <text x="185" y="40" text-anchor="middle" class="subtext">await</text>
+
+      <!-- Data -->
+      <rect x="220" y="10" width="160" height="80" class="data-bg" rx="5" />
+      <text x="300" y="45" text-anchor="middle" class="text-body" font-weight="bold">Data</text>
+      <text x="300" y="65" text-anchor="middle" class="subtext">実体・中身(JSON)</text>
+    </g>
+  </g>
+</svg>
